@@ -1,0 +1,32 @@
+.container {
+  padding: 4rem 5rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.professorText {
+  margin-top: 1rem;
+}
+
+.messageText {
+  width: 40rem;
+}
+
+.messageText p:first-child {
+  margin-top: 0;
+}

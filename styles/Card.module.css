@@ -1,0 +1,24 @@
+.card {
+  border: 1px solid black;
+}
+
+.cardHeader {
+  line-height: 0.4rem;
+}
+
+.cardContent {
+  padding: 1.4rem 1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.cardBody {
+  line-height: 0.4rem;
+}
+
+.cardBody > p {
+  margin: 0;
+}

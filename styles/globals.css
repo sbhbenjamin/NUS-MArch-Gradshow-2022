@@ -1,9 +1,32 @@
+:root {
+  --black: black;
+  --dark-grey: #818181;
+  --light-grey: #979797;
+  --primary: #bf0000;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+}
+p {
+  line-height: 1.8rem;
+}
+
+.text-dark-grey {
+  color: var(--dark-grey);
+}
+
+.text-light-grey {
+  color: var(--light-grey);
+}
+
+.text-uppercase {
+  text-transform: capitalize;
 }
 
 a {
@@ -13,4 +36,81 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+.wrapper {
+  padding: 8rem 5rem 0 5rem;
+}
+
+.backButton {
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+/* laptops */
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* mobile devices */
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
 }

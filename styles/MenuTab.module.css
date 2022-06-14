@@ -1,0 +1,30 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  /* transition: right 1s ease-in-out; */
+}
+
+.content {
+  padding: 10rem 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 3rem;
+}
+
+.overlayTab {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: black;
+  opacity: 75%;
+  width: 100vw;
+  height: 100vh;
+}

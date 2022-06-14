@@ -1,0 +1,17 @@
+.themeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  background-image: url('/backgrounds/contour1.svg');
+}
+
+.themeContent {
+  padding: 5rem 0;
+}
+
+.themeText {
+  width: 600px;
+}

@@ -1,0 +1,16 @@
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
