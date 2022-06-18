@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import Avatar from '../../components/Avatar';
 import Footer from '../../components/Footer';
 import BackButton from '../../components/buttons/backButton';

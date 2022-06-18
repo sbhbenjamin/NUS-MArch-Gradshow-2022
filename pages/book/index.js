@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import ActionButton from '../../components/buttons/ActionButton';
 
 import styles from '../../styles/Book.module.css';

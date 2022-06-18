@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import Theme from '../../components/about/Theme';
 import Messages from '../../components/about/Messages';
 

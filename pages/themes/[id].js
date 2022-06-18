@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import ProjectCard from '../../components/ProjectCard';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import styles from '../../styles/Themes.module.css';
 
 import { projects } from '../../data/projects';
