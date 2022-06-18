@@ -144,14 +144,13 @@ export const getStaticProps = async ({ params }) => {
   );
 
   // find images from project
-  const images = imagesSource[`Projects/${params.id}`];
-  console.log(images.length);
+  // const images = imagesSource[`Projects/${params.id}`];
   // const blurredImages = await images.map(async (image) => ({
   //   blur_url: await getBase64ImageUrl(image.secure_url),
   //   ...image,
   // }));
   // const res = await Promise.all(blurredImages);
-
+  const images = [];
   return {
     props: { project, images }, // will be passed to the page component as props
   };
