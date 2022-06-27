@@ -3,9 +3,9 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com'],
-    // loader: 'custom',
-    // path: 'https://res.cloudinary.com/datxbbgwb/image/upload/q_5,fl_lossy,f_auto/',
+    // domains: ['nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com'],
+    loader: 'custom',
+    path: 'https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com',
   },
   webpack(config) {
     config.module.rules.push({

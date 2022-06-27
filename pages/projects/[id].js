@@ -14,10 +14,6 @@ import { motion } from 'framer-motion';
 import { projects } from '../../data/projects';
 import { imagesSource } from '../../data/images';
 
-const customLoader = () => {
-  return 'https://res.cloudinary.com/datxbbgwb/image/upload/q_5,fl_lossy,f_auto/';
-};
-
 const Project = ({ project, images }) => {
   const { title, abstract, student, supervisor, theme, comment } = project;
   const [isEnlarged, setEnlarged] = useState(false);
@@ -46,20 +42,21 @@ const Project = ({ project, images }) => {
         <div className={`${styles.imageBox} disable-scrollbars`}>
           {images &&
             images.map((image) => (
-              <div
-                key={image.secure_url}
-                onClick={() => setEnlarged(!isEnlarged)}
-              >
+              <div key={image} onClick={() => setEnlarged(!isEnlarged)}>
                 <Image
                   className={`${styles.individualImageBox} ${
                     isEnlarged && styles.enlarged
                   }`}
-                  src={`https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/${image}`}
+                  loader={() => {
+                    return `https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/projects/22003/${image}`;
+                  }}
+                  src={image}
                   alt="image"
                   layout="responsive"
                   width="100%"
                   height="100%"
                   objectFit="cover"
+                  priority
                 />
               </div>
             ))}
@@ -141,11 +138,11 @@ export const getStaticProps = async ({ params }) => {
   // }));
   // const res = await Promise.all(blurredImages);
   const images = [
-    'projects/22003/1_sjdiw9.png',
-    'projects/22003/3_o0f2zi.png',
-    'projects/22003/4_ggw2ph.png',
-    'projects/22003/5_tbxu0t.png',
-    'projects/22003/7_vdewih.png',
+    '1_sjdiw9.png',
+    '3_o0f2zi.png',
+    '4_ggw2ph.png',
+    '5_tbxu0t.png',
+    '7_vdewih.png',
   ];
   return {
     props: { project, images }, // will be passed to the page component as props

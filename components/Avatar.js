@@ -12,13 +12,13 @@ const Avatar = ({ name, email, website, linkedin, instagram }) => {
   return (
     <div>
       <div className={styles.avatarWrapper}>
-        <Image
+        {/* <Image
           src={sampleavatar}
           alt="sample avatar"
           width={150}
           height={150}
           className={styles.avatar}
-        />
+        /> */}
         <p>{name}</p>
         <div className={styles.socials}>
           <FaGlobeAsia size={20} />
