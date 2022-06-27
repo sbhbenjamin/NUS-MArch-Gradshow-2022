@@ -3,7 +3,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['res.cloudinary.com'],
+    domains: ['nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com'],
     // loader: 'custom',
     // path: 'https://res.cloudinary.com/datxbbgwb/image/upload/q_5,fl_lossy,f_auto/',
   },

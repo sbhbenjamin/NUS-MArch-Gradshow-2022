@@ -54,13 +54,12 @@ const Project = ({ project, images }) => {
                   className={`${styles.individualImageBox} ${
                     isEnlarged && styles.enlarged
                   }`}
-                  src={image.secure_url}
+                  src={`https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/${image}`}
                   alt="image"
                   layout="responsive"
                   width="100%"
                   height="100%"
                   objectFit="cover"
-                  priority
                 />
               </div>
             ))}
@@ -129,15 +128,6 @@ const SupervisorComments = ({ supervisor, comment }) => {
   );
 };
 
-const getBase64ImageUrl = async (imageId) => {
-  const response = await fetch(
-    `https://res.cloudinary.com/datxbbgwb/image/upload/q_5/w_100/e_blur:1000,q_auto,f_webp${imageId}`
-  );
-  const buffer = await response.arrayBuffer();
-  const data = Buffer.from(buffer).toString('base64');
-  return `data:image/webp;base64,${data}`;
-};
-
 export const getStaticProps = async ({ params }) => {
   const project = projects.find(
     (project) => project.id.toString() === params.id
@@ -150,7 +140,13 @@ export const getStaticProps = async ({ params }) => {
   //   ...image,
   // }));
   // const res = await Promise.all(blurredImages);
-  const images = [];
+  const images = [
+    'projects/22003/1_sjdiw9.png',
+    'projects/22003/3_o0f2zi.png',
+    'projects/22003/4_ggw2ph.png',
+    'projects/22003/5_tbxu0t.png',
+    'projects/22003/7_vdewih.png',
+  ];
   return {
     props: { project, images }, // will be passed to the page component as props
   };
