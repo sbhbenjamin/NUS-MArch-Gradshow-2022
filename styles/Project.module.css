@@ -87,4 +87,15 @@
   .avatar {
     order: 5;
   }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+/* mobile devices */
+@media screen and (max-width: 550px) {
+  .textBox {
+    padding: 14rem 5rem 2rem 5rem;
+  }
 }

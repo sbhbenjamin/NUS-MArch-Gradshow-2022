@@ -35,7 +35,7 @@ const Project = ({ project, images }) => {
           </div>
 
           <SupervisorComments supervisor={supervisor} comment={comment} />
-          <div className={styles.avatar}>
+          <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
             <Avatar name={student} />
           </div>
         </div>
@@ -59,6 +59,9 @@ const Project = ({ project, images }) => {
                 />
               </div>
             ))}
+        </div>
+        <div className={styles.avatar}>
+          <Avatar name={student} />
         </div>
       </div>
     </Layout>
