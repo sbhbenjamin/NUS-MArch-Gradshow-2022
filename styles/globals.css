@@ -93,6 +93,9 @@ h3 {
   html {
     font-size: 14px;
   }
+  p {
+    line-height: 2rem;
+  }
 }
 
 /* tablets */
@@ -100,11 +103,19 @@ h3 {
   html {
     font-size: 12px;
   }
+
+  p {
+    line-height: 2rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
   html {
     font-size: 10px;
+  }
+
+  p {
+    line-height: 2.6rem;
   }
 }
 
@@ -112,5 +123,9 @@ h3 {
 @media screen and (max-width: 550px) {
   html {
     font-size: 8px;
+  }
+
+  p {
+    line-height: 2.9rem;
   }
 }

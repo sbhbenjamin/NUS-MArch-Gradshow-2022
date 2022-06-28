@@ -22,13 +22,13 @@
   .card {
     height: 30rem;
     max-height: 30vh;
-    width: calc(100% - margin);
+    width: calc(100vw - 4rem);
     background-color: var(--light-grey);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 5rem 5rem 5rem 4rem;
+    padding: 5rem;
     margin: 0 2rem;
   }
 }

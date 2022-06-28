@@ -91,11 +91,21 @@
   .hideOnMobile {
     display: none;
   }
+
+  .callout {
+    padding: 3rem 0;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: none;
+  }
 }
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
   .textBox {
     padding: 14rem 5rem 2rem 5rem;
+  }
+
+  .text {
+    width: 100%;
   }
 }
