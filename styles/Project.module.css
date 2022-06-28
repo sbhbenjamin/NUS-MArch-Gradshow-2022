@@ -49,6 +49,10 @@
   text-align: end;
 }
 
+.hideOnTablet {
+  display: none;
+}
+
 @media screen and (max-width: 1250px) {
   .textContainer {
     display: flex;
@@ -90,6 +94,10 @@
 
   .hideOnMobile {
     display: none;
+  }
+
+  .hideOnTablet {
+    display: block;
   }
 
   .callout {

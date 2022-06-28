@@ -60,7 +60,7 @@ const Project = ({ project, images }) => {
               </div>
             ))}
         </div>
-        <div className={styles.avatar}>
+        <div className={`${styles.avatar} ${styles.hideOnTablet}`}>
           <Avatar name={student} />
         </div>
       </div>

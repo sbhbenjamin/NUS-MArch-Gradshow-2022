@@ -99,6 +99,21 @@ h3 {
 }
 
 /* tablets */
+@media screen and (max-width: 880px) {
+  html {
+    font-size: 12px;
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* tablets */
 @media screen and (max-width: 800px) {
   html {
     font-size: 12px;

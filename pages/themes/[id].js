@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import ProjectCard from '../../components/ProjectCard';
@@ -10,8 +10,15 @@ import { projects } from '../../data/projects';
 import useHorizontalScroll from '../../utils/useHorizontalScroll';
 import BackButton from '../../components/buttons/backButton';
 
+import { useWindowSize } from '../../hooks/useWindowSize';
+
 const Theme = ({ projects, theme, supervisor }) => {
   const scrollRef = useHorizontalScroll();
+  const size = useWindowSize();
+
+  useState(() => {
+    console.log(size);
+  }, [size]);
 
   return (
     <Layout>
