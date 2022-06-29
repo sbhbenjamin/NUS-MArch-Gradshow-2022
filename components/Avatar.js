@@ -3,7 +3,7 @@ import Image from 'next/dist/client/image';
 
 import styles from '../styles/Avatar.module.css';
 
-import { AiFillInstagram, AiFillLinkedin } from 'react-icons/Ai';
+// import { AiFillInstagram, AiFillLinkedin } from 'react-icons/Ai';
 import { FaGlobeAsia } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
@@ -26,9 +26,9 @@ const Avatar = ({ name, email, website, linkedin, instagram, projectId }) => {
         <p>{name}</p>
         <div className={styles.socials}>
           <FaGlobeAsia size={20} />
-          <AiFillLinkedin size={20} />
+          {/* <AiFillLinkedin size={20} /> */}
           <FiMail size={20} />
-          <AiFillInstagram size={20} />
+          {/* <AiFillInstagram size={20} /> */}
         </div>
       </div>
     </div>
