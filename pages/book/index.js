@@ -34,7 +34,7 @@ const index = () => {
               <div className={styles.buttonContainer}>
                 <ActionButton
                   text="Preview Book"
-                  link="https://www.google.com"
+                  link="https://issuu.com/nusmarchshow/docs/2022_gradbook_web_preview"
                   type="secondary"
                 />
                 <ActionButton

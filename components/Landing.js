@@ -25,16 +25,6 @@ const pathVariants = {
   },
 };
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
 const item = {
   hidden: { opacity: 0 },
   show: { opacity: 1 },
@@ -50,7 +40,7 @@ const Landing = () => {
     <div className={styles.container} style={{ url: `${Background()}` }}>
       <div className={styles.content}>
         {/* <Background /> */}
-        <motion.div
+        {/* <motion.div
           variants={container}
           initial="hidden"
           animate="show"
@@ -73,35 +63,19 @@ const Landing = () => {
           </motion.div>
 
           <motion.div variants={item} className={styles.navItem}>
-            <Link href="/events" passHref>
-              <a>
-                <h3>Events</h3>
-              </a>
-            </Link>
-          </motion.div>
-
-          <motion.div variants={item} className={styles.navItem}>
             <Link href="/book" passHref>
               <a>
                 <h3>Book</h3>
               </a>
             </Link>
           </motion.div>
-
-          <motion.div variants={item} className={styles.navItem}>
-            <Link href="/gallery" passHref>
-              <a>
-                <h3>Gallery</h3>
-              </a>
-            </Link>
-          </motion.div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           variants={hero}
           initial="hidden"
           animate="show"
-          transition={{ delay: 0.4, duration: 0.5 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
         >
           <h1 className={styles.hero}>
             NUS M.Arch Gradshow <br />

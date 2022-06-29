@@ -12,13 +12,15 @@ import BackButton from '../../components/buttons/backButton';
 
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-const Theme = ({ projects, theme, supervisor }) => {
-  const scrollRef = useHorizontalScroll();
-  const size = useWindowSize();
+import { thumbnails } from '../../data/images/thumbnails';
 
-  useState(() => {
-    console.log(size);
-  }, [size]);
+const Theme = ({ projects, theme, supervisor, themeThumbnails }) => {
+  const scrollRef = useHorizontalScroll();
+  // const size = useWindowSize();
+
+  // useState(() => {
+  //   console.log(size);
+  // }, [size]);
 
   return (
     <Layout>
@@ -47,6 +49,7 @@ const Theme = ({ projects, theme, supervisor }) => {
           >
             {projects.map((project) => (
               <ProjectCard
+                projectUrl={thumbnails[project.id].url}
                 project={project.title}
                 name={project.student}
                 href={`/projects/${project.id}`}
@@ -64,11 +67,16 @@ export const getStaticProps = async ({ params }) => {
   const filteredProjects = projects.filter(
     (project) => project.supervisor.toLowerCase() === params.id
   );
-  console.log('encoding', projects[0].supervisor.toLowerCase());
-  console.log('params', params.id);
+  console.log(filteredProjects);
+  const themeThumbnails = filteredProjects.map(
+    (project) => thumbnails[project.id]
+  );
+
+  console.log(themeThumbnails);
+
   const { theme, supervisor } = projects[0];
   return {
-    props: { projects: filteredProjects, theme, supervisor }, // will be passed to the page component as props
+    props: { projects: filteredProjects, theme, supervisor, themeThumbnails }, // will be passed to the page component as props
   };
 };
 

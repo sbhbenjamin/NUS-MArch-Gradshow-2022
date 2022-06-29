@@ -12,4 +12,20 @@
 
 .hamburger {
   z-index: 10;
+  display: none;
+}
+.rightNav {
+  display: flex;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 650px) {
+  .hamburger {
+    z-index: 10;
+    display: block;
+  }
+
+  .navItem {
+    display: none;
+  }
 }

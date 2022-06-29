@@ -12,9 +12,9 @@ import { motion } from 'framer-motion';
 
 // sample projects
 import { projects } from '../../data/projects';
-import { imagesSource } from '../../data/images';
+import { projects as allProjectImages } from '../../data/images/projects';
 
-const Project = ({ project, images }) => {
+const Project = ({ project, projectImages: images }) => {
   const { title, abstract, student, supervisor, theme, comment } = project;
   const [isEnlarged, setEnlarged] = useState(false);
 
@@ -36,21 +36,21 @@ const Project = ({ project, images }) => {
 
           <SupervisorComments supervisor={supervisor} comment={comment} />
           <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
-            <Avatar name={student} />
+            <Avatar name={student} projectId={project.id} />
           </div>
         </div>
         <div className={`${styles.imageBox} disable-scrollbars`}>
           {images &&
             images.map((image) => (
-              <div key={image} onClick={() => setEnlarged(!isEnlarged)}>
+              <div key={image.url} onClick={() => setEnlarged(!isEnlarged)}>
                 <Image
                   className={`${styles.individualImageBox} ${
                     isEnlarged && styles.enlarged
                   }`}
                   loader={() => {
-                    return `https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/projects/22003/${image}`;
+                    return `https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/projects/${image.url}`;
                   }}
-                  src={image}
+                  src={image.url}
                   alt="image"
                   layout="responsive"
                   width="100%"
@@ -61,7 +61,7 @@ const Project = ({ project, images }) => {
             ))}
         </div>
         <div className={`${styles.avatar} ${styles.hideOnTablet}`}>
-          <Avatar name={student} />
+          <Avatar name={student} projectId={project.id} />
         </div>
       </div>
     </Layout>
@@ -133,21 +133,9 @@ export const getStaticProps = async ({ params }) => {
   );
 
   // find images from project
-  // const images = imagesSource[`Projects/${params.id}`];
-  // const blurredImages = await images.map(async (image) => ({
-  //   blur_url: await getBase64ImageUrl(image.secure_url),
-  //   ...image,
-  // }));
-  // const res = await Promise.all(blurredImages);
-  const images = [
-    '1_sjdiw9.png',
-    '3_o0f2zi.png',
-    '4_ggw2ph.png',
-    '5_tbxu0t.png',
-    '7_vdewih.png',
-  ];
+  const projectImages = allProjectImages[`${params.id}`];
   return {
-    props: { project, images }, // will be passed to the page component as props
+    props: { project, projectImages }, // will be passed to the page component as props
   };
 };
 

@@ -15,7 +15,7 @@ const Card = ({ title, student, supervisor, img }) => {
       />
       <div className={styles.cardContent}>
         <div className={styles.cardHeader}>
-          <h4>{title}</h4>
+          <h5>{title}</h5>
           <p>{student}</p>
         </div>
         <div className={styles.cardBody}>

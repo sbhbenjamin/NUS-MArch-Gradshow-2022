@@ -10,9 +10,19 @@ import MenuTab from './MenuTab';
 
 import { motion } from 'framer-motion';
 
-const variants = {
-  open: { opacity: 1 },
-  closed: { opacity: 0 },
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
 };
 
 const Navbar = () => {
@@ -29,6 +39,34 @@ const Navbar = () => {
             <Logo width="80px" height="80px" />
           </a>
         </Link>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className={styles.rightNav}
+        >
+          <motion.div variants={item} className={styles.navItem}>
+            <Link href="/index">
+              <a>
+                <h4>Works</h4>
+              </a>
+            </Link>
+          </motion.div>
+          <motion.div variants={item} className={styles.navItem}>
+            <Link href="/about">
+              <a>
+                <h4>About</h4>
+              </a>
+            </Link>
+          </motion.div>
+          <motion.div variants={item} className={styles.navItem}>
+            <Link href="/book">
+              <a>
+                <h4>Book</h4>
+              </a>
+            </Link>
+          </motion.div>
+        </motion.div>
         <div className={styles.hamburger}>
           <Hamburger rounded toggled={isOpen} toggle={setOpen} />
         </div>

@@ -1,15 +1,22 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ project, name, href }) => {
+const ProjectCard = ({ project, name, href, projectUrl }) => {
   return (
     <div>
       <Link href={href}>
         <a>
-          <div className={styles.card}>
-            <h3>{project}</h3>
+          <div
+            className={styles.card}
+            style={{
+              backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/thumbnails/${projectUrl})`,
+              backgroundSize: 'cover',
+            }}
+          >
+            <h2>{project}</h2>
             <h4>{name}</h4>
           </div>
         </a>

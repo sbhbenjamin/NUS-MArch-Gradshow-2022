@@ -9,12 +9,12 @@ import three from '../../data/images/3.jpg';
 const Gallery = () => {
   return (
     <div className={styles.gallery}>
-      <Card
+      {/* <Card
         title="Monarchs and Milkweed"
         student="John Doe"
         supervisor="Assoc. Prof. Jane Doe"
         img="https://res.cloudinary.com/fay/image/upload/q_5/v1617047570/galaxy_ne5p8f.jpg"
-      />
+      /> */}
       <Card
         title="Monarchs and Milkweed"
         student="John Doe"
