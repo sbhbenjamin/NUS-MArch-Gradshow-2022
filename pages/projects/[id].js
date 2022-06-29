@@ -48,7 +48,7 @@ const Project = ({ project, projectImages: images }) => {
                     isEnlarged && styles.enlarged
                   }`}
                   loader={() => {
-                    return `https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/projects/${image.url}`;
+                    return `https://d18eblg1a9ju11.cloudfront.net/projects/${image.url}`;
                   }}
                   src={image.url}
                   alt="image"

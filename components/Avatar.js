@@ -15,7 +15,7 @@ const Avatar = ({ name, email, website, linkedin, instagram, projectId }) => {
       <div className={styles.avatarWrapper}>
         <Image
           loader={() => {
-            return `https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/avatars/${avatars[projectId]}`;
+            return `https://d18eblg1a9ju11.cloudfront.net/avatars/${avatars[projectId]}`;
           }}
           alt={name}
           src={avatars[projectId]}

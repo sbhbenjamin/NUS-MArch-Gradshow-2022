@@ -67,12 +67,9 @@ export const getStaticProps = async ({ params }) => {
   const filteredProjects = projects.filter(
     (project) => project.supervisor.toLowerCase() === params.id
   );
-  console.log(filteredProjects);
   const themeThumbnails = filteredProjects.map(
     (project) => thumbnails[project.id]
   );
-
-  console.log(themeThumbnails);
 
   const { theme, supervisor } = projects[0];
   return {

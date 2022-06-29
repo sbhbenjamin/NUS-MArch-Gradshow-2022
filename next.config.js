@@ -5,7 +5,7 @@ module.exports = {
   images: {
     domains: ['nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/'],
     // loader: 'custom',
-    // path: 'https://nusmarchgradshow2022.s3.ap-southeast-1.amazonaws.com/',
+    // path: 'https://d18eblg1a9ju11.cloudfront.net/',
   },
   webpack(config) {
     config.module.rules.push({
