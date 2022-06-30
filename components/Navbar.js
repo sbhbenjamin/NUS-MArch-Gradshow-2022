@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className={styles.navbar}>
         <Link href="/">
           <a>
-            <Logo width="80px" height="80px" />
+            <Logo className={styles.logo} width="80px" height="80px" />
           </a>
         </Link>
         <div className={styles.rightNav}>
@@ -63,7 +63,12 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.hamburger}>
-          <Hamburger rounded toggled={isOpen} toggle={setOpen} />
+          <Hamburger
+            className={styles.hamburgerIcon}
+            rounded
+            toggled={isOpen}
+            toggle={setOpen}
+          />
         </div>
         {isOpen && <MenuTab closeTab={() => setOpen(false)} />}
       </div>

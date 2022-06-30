@@ -14,18 +14,36 @@
   z-index: 10;
   display: none;
 }
+
 .rightNav {
   display: flex;
   gap: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .hamburger {
     z-index: 10;
     display: block;
+    margin: -8px;
+  }
+
+  .hamburgerIcon {
+    right: -8px;
   }
 
   .navItem {
     display: none;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -15,7 +15,7 @@ body {
   overflow-y: overlay;
 }
 p {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 .text-dark-grey {
@@ -100,12 +100,12 @@ h5 {
 }
 
 /* laptops */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 14px;
   }
   p {
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -116,7 +116,7 @@ h5 {
   }
 
   p {
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
 
   h1 {
@@ -131,7 +131,7 @@ h5 {
   }
 
   p {
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -141,7 +141,7 @@ h5 {
   }
 
   p {
-    line-height: 2.6rem;
+    line-height: 3rem;
   }
 }
 
@@ -152,6 +152,6 @@ h5 {
   }
 
   p {
-    line-height: 2.9rem;
+    line-height: 3.5rem;
   }
 }
