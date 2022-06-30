@@ -55,7 +55,14 @@ const Project = ({ project, projectImages: images }) => {
 
             <SupervisorComments supervisor={supervisor} comment={comment} />
             <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
-              <Avatar name={student} projectId={project.id} />
+              <Avatar
+                name={student}
+                projectId={project.id}
+                email={project.email}
+                web={project.web}
+                instagram={project.instagram}
+                linkedin={project.linkedin}
+              />
             </div>
           </div>
         </div>

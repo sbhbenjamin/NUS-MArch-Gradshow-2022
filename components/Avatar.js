@@ -1,15 +1,16 @@
 import React from 'react';
 import Image from 'next/dist/client/image';
+import Link from 'next/link';
 
 import styles from '../styles/Avatar.module.css';
 
-// import { AiFillInstagram, AiFillLinkedin } from 'react-icons/Ai';
+import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { FaGlobeAsia } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
 import { avatars } from '../data/images/avatars';
 
-const Avatar = ({ name, email, website, linkedin, instagram, projectId }) => {
+const Avatar = ({ name, email, web, linkedin, instagram, projectId }) => {
   return (
     <div>
       <div className={styles.avatarWrapper}>
@@ -25,10 +26,26 @@ const Avatar = ({ name, email, website, linkedin, instagram, projectId }) => {
         />
         <p>{name}</p>
         <div className={styles.socials}>
-          <FaGlobeAsia size={20} />
-          {/* <AiFillLinkedin size={20} /> */}
-          <FiMail size={20} />
-          {/* <AiFillInstagram size={20} /> */}
+          {web && (
+            <a href={web}>
+              <FaGlobeAsia size={20} />
+            </a>
+          )}
+          {linkedin && (
+            <a href={linkedin}>
+              <AiFillLinkedin size={20} />
+            </a>
+          )}
+          {email && (
+            <a href={`mailto:${email}`}>
+              <FiMail size={20} />
+            </a>
+          )}
+          {instagram && (
+            <a href={instagram}>
+              <AiFillInstagram size={20} />
+            </a>
+          )}
         </div>
       </div>
     </div>
