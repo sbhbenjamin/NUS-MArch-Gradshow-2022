@@ -17,6 +17,10 @@
   width: 50rem;
 }
 
+.innerContentBox {
+  width: 100%;
+}
+
 .textBox {
   padding: 8rem 5rem 2rem 5rem;
 }
@@ -28,8 +32,12 @@
   overflow-y: scroll;
   height: 100vh;
 }
+
 .projectHeader {
   padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .enlarged {
@@ -72,6 +80,16 @@
   position: relative;
 }
 
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abstractContainer {
+}
+
 @media screen and (max-width: 1250px) {
   .textContainer {
     display: flex;
@@ -101,10 +119,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-  }
-
-  .text {
-    width: 40rem;
   }
 
   .avatar {

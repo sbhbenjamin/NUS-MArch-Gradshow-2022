@@ -117,12 +117,14 @@ const ProjectHeader = ({ title, student, supervisor, theme }) => {
 const ProjectAbstract = ({ abstracts }) => {
   return (
     <div className={styles.textContainer}>
-      <p>
-        <strong>Abstract</strong>
-      </p>
-      <div className={styles.text}>
+      <div className={styles.abstractContainer}>
+        <p>
+          <strong>Abstract</strong>
+        </p>
         {abstracts.map((abstract) => (
-          <p key={abstract}>{abstract}</p>
+          <p key={abstract} className="text">
+            {abstract}
+          </p>
         ))}
       </div>
     </div>
@@ -131,12 +133,12 @@ const ProjectAbstract = ({ abstracts }) => {
 
 const SupervisorComments = ({ supervisor, comment }) => {
   return (
-    <div className={styles.callout}>
-      <div className={`${styles.calloutContent} ${styles.textContainer}`}>
+    <div className={`${styles.callout} ${styles.textContainer}`}>
+      <div className={styles.calloutContent}>
         <p>
           <strong>Supervisor Comments</strong>
         </p>
-        <div className={styles.text}>
+        <div>
           <p className="text">{comment}</p>
           <p className={styles.quoteName}>- {supervisor}</p>
         </div>
