@@ -1,22 +1,26 @@
 export const clusters = [
   {
-    label: 'All clusters',
-    label: 'All Clusters',
+    cid: '0',
+    cluster: 'All Clusters',
   },
   {
-    label: 'Applequake',
-    value: 'applequake',
+    cid: '1',
+    cluster: 'Atmosphere + Agency',
   },
   {
-    label: 'Doggytown',
-    value: 'doggytown',
+    cid: '2',
+    cluster: 'Conservation + Heritage',
   },
   {
-    label: 'Catppuccino',
-    value: 'catppuccino',
+    cid: '3',
+    cluster: 'Performative Design',
   },
   {
-    label: 'Skintime',
-    value: 'skintime',
+    cid: '4',
+    cluster: 'Speculative Environments',
+  },
+  {
+    cid: '5',
+    cluster: 'Urban Commons + Wellness',
   },
 ];

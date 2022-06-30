@@ -39,7 +39,7 @@ const Navbar = () => {
             <Logo width="80px" height="80px" />
           </a>
         </Link>
-        <motion.div
+        {/* <motion.div
           variants={container}
           initial="hidden"
           animate="show"
@@ -66,7 +66,30 @@ const Navbar = () => {
               </a>
             </Link>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
+        <div className={styles.rightNav}>
+          <div className={styles.navItem}>
+            <Link href="/index">
+              <a>
+                <h4>Works</h4>
+              </a>
+            </Link>
+          </div>
+          <div className={styles.navItem}>
+            <Link href="/about">
+              <a>
+                <h4>About</h4>
+              </a>
+            </Link>
+          </div>
+          <div className={styles.navItem}>
+            <Link href="/book">
+              <a>
+                <h4>Book</h4>
+              </a>
+            </Link>
+          </div>
+        </div>
         <div className={styles.hamburger}>
           <Hamburger rounded toggled={isOpen} toggle={setOpen} />
         </div>

@@ -4,19 +4,14 @@ import { clusters } from '../../data/clusters';
 
 import styles from '../../styles/Index.module.css';
 
-const Options = () => {
-  const [query, setQuery] = useState('');
-  const [supervisor, setSupervisor] = useState('');
-  const [cluster, setCluster] = useState('');
-
-  const handleSupervisorChange = (value) => {
-    setSupervisor(value);
-  };
-
-  const handleClusterChange = (value) => {
-    setCluster(value);
-  };
-
+const Options = ({
+  query,
+  setQuery,
+  supervisor,
+  setSupervisor,
+  cluster,
+  setCluster,
+}) => {
   return (
     <div className={styles.controlGroup}>
       <div>
@@ -29,17 +24,27 @@ const Options = () => {
         />
       </div>
       <div className={styles.optionGroup}>
-        <select onChange={handleSupervisorChange} className={styles.option}>
+        <select
+          className={styles.option}
+          defaultValue={supervisors[0]}
+          value={supervisor}
+          onChange={(e) => setSupervisor(e.target.value)}
+        >
           {supervisors.map((supervisor) => (
-            <option key={supervisor.value} value={supervisor.value}>
-              {supervisor.label}
+            <option key={supervisor.supervisor} value={supervisor.sid}>
+              {supervisor.supervisor}
             </option>
           ))}
         </select>
-        <select onChange={handleSupervisorChange} className={styles.option}>
+        <select
+          className={styles.option}
+          defaultValue={clusters[0]}
+          value={cluster}
+          onChange={(e) => setCluster(e.target.value)}
+        >
           {clusters.map((cluster) => (
-            <option key={cluster.label} value={cluster.value}>
-              {cluster.label}
+            <option key={cluster.cluster} value={cluster.cid}>
+              {cluster.cluster}
             </option>
           ))}
         </select>
