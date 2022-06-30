@@ -62,9 +62,12 @@ const Project = ({ project, projectImages: images }) => {
         <div className={`${styles.imageBox} disable-scrollbars`}>
           {images &&
             images.map((image) => (
-              <div key={image.url} onClick={() => setEnlarged(image.url)}>
+              <div
+                key={image.url}
+                onClick={() => setEnlarged(image.url)}
+                className={styles.individualImageBox}
+              >
                 <Image
-                  className={styles.individualImageBox}
                   loader={() => {
                     return `https://d18eblg1a9ju11.cloudfront.net/projects/${image.url}`;
                   }}
