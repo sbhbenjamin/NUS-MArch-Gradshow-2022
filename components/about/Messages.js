@@ -2,63 +2,51 @@ import React from 'react';
 import styles from '../../styles/Messages.module.css';
 import Image from 'next/image';
 
-import prof from '../../data/images/prof.png';
+import { messages } from '../../data/messages';
 
 const MessageContainer = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.header}>Messages</h2>
       <div className={styles.messages}>
-        <Message />
-        <Message />
+        {messages.map(({ img, name, title, message }) => (
+          <Message
+            key={img}
+            img={img}
+            title={title}
+            message={message}
+            name={name}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-const Message = () => {
+const Message = ({ img, title, message, name }) => {
   return (
     <div className={styles.message}>
       <div>
-        <Image src={prof} alt="sample image 1" />
+        <Image
+          loader={() => img}
+          src={img}
+          alt="sample image 1"
+          width={400}
+          height={600}
+        />
         <div className={styles.professorText}>
-          <h4>Head of Department</h4>
-          <p className="noMargin">Professor John Doe (Dr.)</p>
+          <h5>{name}</h5>
+          {title.map((line) => (
+            <p className="noMargin" key={line}>
+              {line}
+            </p>
+          ))}
         </div>
       </div>
       <div className={styles.messageText}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum laborum sunt harum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vero sed
-          optio odio corporis quidem exercitationem ducimus rem enim earum
-          fugiat beatae cumque aperiam ea impedit rerum.
-        </p>
+        {message.map((msg) => (
+          <p key={msg}>{msg}</p>
+        ))}
       </div>
     </div>
   );

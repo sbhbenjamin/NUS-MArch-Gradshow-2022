@@ -10,13 +10,14 @@
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .messages {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 6rem;
 }
 
 .professorText {
