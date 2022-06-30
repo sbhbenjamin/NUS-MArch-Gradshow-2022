@@ -16,6 +16,10 @@
   margin-top: 2rem;
 }
 
+.container {
+  padding-bottom: 5rem;
+}
+
 .gallery {
   margin-top: 5rem;
 }

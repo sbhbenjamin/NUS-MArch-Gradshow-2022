@@ -54,7 +54,7 @@ const Index = () => {
   return (
     <div>
       <Layout>
-        <div className="wrapper">
+        <div className={`${styles.container} wrapper`}>
           <div className="content">
             <h2>Index of Works</h2>
             <div className={styles.controls}>
