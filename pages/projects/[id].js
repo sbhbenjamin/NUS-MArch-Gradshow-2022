@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import Layout from '../../components/Layout';
 import Avatar from '../../components/Avatar';
-import Footer from '../../components/Footer';
 import BackButton from '../../components/buttons/backButton';
 
 import styles from '../../styles/Project.module.css';
@@ -22,21 +21,23 @@ const Project = ({ project, projectImages: images }) => {
     <Layout>
       <div className={`${styles.container}`}>
         <div className={`${styles.contentBox} disable-scrollbars`}>
-          <div className={styles.textBox}>
-            <BackButton />
-            <ProjectHeader
-              title={title}
-              student={student}
-              supervisor={supervisor}
-              theme={theme}
-            />
+          <div className={styles.innerContentBox}>
+            <div className={styles.textBox}>
+              <BackButton />
+              <ProjectHeader
+                title={title}
+                student={student}
+                supervisor={supervisor}
+                theme={theme}
+              />
 
-            <ProjectAbstract abstracts={abstract} />
-          </div>
+              <ProjectAbstract abstracts={abstract} />
+            </div>
 
-          <SupervisorComments supervisor={supervisor} comment={comment} />
-          <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
-            <Avatar name={student} projectId={project.id} />
+            <SupervisorComments supervisor={supervisor} comment={comment} />
+            <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
+              <Avatar name={student} projectId={project.id} />
+            </div>
           </div>
         </div>
         <div className={`${styles.imageBox} disable-scrollbars`}>

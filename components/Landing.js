@@ -75,7 +75,7 @@ const Landing = () => {
           variants={hero}
           initial="hidden"
           animate="show"
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         >
           <h1 className={styles.hero}>
             NUS M.Arch Gradshow <br />

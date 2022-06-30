@@ -9,6 +9,8 @@
   width: 50%;
   overflow-y: scroll;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .abstract {

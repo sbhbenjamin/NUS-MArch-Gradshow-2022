@@ -4,7 +4,6 @@ import Layout from '../../components/Layout';
 import ActionButton from '../../components/buttons/ActionButton';
 
 import styles from '../../styles/Book.module.css';
-import sampleimage from '../../data/images/prof.png';
 
 const index = () => {
   return (
@@ -13,7 +12,12 @@ const index = () => {
         <div className={styles.bookContainer}>
           <div className={styles.bookContent}>
             <div>
-              <Image src={sampleimage} height={390} width={310} />
+              <Image
+                loader={() => '/placeholder.png'}
+                src="/placeholder.png"
+                height={390}
+                width={310}
+              />
             </div>
             <div className={styles.description}>
               <div className={styles.bookText}>
