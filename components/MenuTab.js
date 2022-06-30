@@ -10,7 +10,7 @@ const MenuTab = ({ closeTab }) => {
         <div className={`${styles.content}`}>
           <Link href="/index" passHref>
             <a>
-              <h3>Index</h3>
+              <h3>Works</h3>
             </a>
           </Link>
           <Link href="/about" passHref>
@@ -18,19 +18,9 @@ const MenuTab = ({ closeTab }) => {
               <h3>About</h3>
             </a>
           </Link>
-          <Link href="/events" passHref>
-            <a>
-              <h3>Events</h3>
-            </a>
-          </Link>
           <Link href="/book" passHref>
             <a>
               <h3>Book</h3>
-            </a>
-          </Link>
-          <Link href="/gallery" passHref>
-            <a>
-              <h3>Gallery</h3>
             </a>
           </Link>
         </div>

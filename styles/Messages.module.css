@@ -26,6 +26,7 @@
 
 .messageText {
   width: 40rem;
+  text-align: justify;
 }
 
 .messageText p:first-child {

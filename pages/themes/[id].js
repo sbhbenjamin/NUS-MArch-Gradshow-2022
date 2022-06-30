@@ -6,6 +6,7 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/Themes.module.css';
 
 import { projects } from '../../data/projects';
+import { supervisors } from '../../data/supervisors';
 
 import useHorizontalScroll from '../../utils/useHorizontalScroll';
 import BackButton from '../../components/buttons/backButton';
@@ -65,13 +66,17 @@ const Theme = ({ projects, theme, supervisor, themeThumbnails }) => {
 
 export const getStaticProps = async ({ params }) => {
   const filteredProjects = projects.filter(
-    (project) => project.supervisor.toLowerCase() === params.id
+    (project) => project.sid === params.id
   );
+
   const themeThumbnails = filteredProjects.map(
     (project) => thumbnails[project.id]
   );
 
-  const { theme, supervisor } = projects[0];
+  const { theme, supervisor } = supervisors.find(
+    (supervisor) => supervisor.sid === params.id
+  );
+
   return {
     props: { projects: filteredProjects, theme, supervisor, themeThumbnails }, // will be passed to the page component as props
   };
@@ -79,7 +84,7 @@ export const getStaticProps = async ({ params }) => {
 
 export const getStaticPaths = async () => {
   const paths = projects.map((project) => ({
-    params: { id: project.supervisor.toLowerCase() },
+    params: { id: project.sid },
   }));
   return { paths, fallback: false };
 };

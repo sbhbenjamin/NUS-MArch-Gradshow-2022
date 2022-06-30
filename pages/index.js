@@ -6,11 +6,11 @@ import ProjectCard from '../components/ProjectCard';
 
 import styles from '../styles/Home.module.css';
 
-import { themes } from '../data/themes';
+import { supervisors } from '../data/supervisors';
 
 import FadeInWhenVisible from '../components/motion/FadeInWhenVisible';
 
-export default function Home({ themes }) {
+export default function Home({ supervisors }) {
   return (
     <div>
       <Head>
@@ -22,23 +22,23 @@ export default function Home({ themes }) {
       <main>
         <Layout>
           <Landing />
-          <ProjectContent />
+          <ProjectContent supervisors={supervisors} />
         </Layout>
       </main>
     </div>
   );
 }
 
-const ProjectContent = () => {
+const ProjectContent = ({ supervisors }) => {
   return (
     <div className={styles.content}>
-      {themes.map((theme) => (
+      {supervisors.map((theme) => (
         <div className={styles.project} key={theme.supervisor}>
           <FadeInWhenVisible>
             <ProjectCard
               project={theme.theme}
               name={theme.supervisor}
-              href={`/themes/${theme.supervisor.toLowerCase()}`}
+              href={`/themes/${theme.sid}`}
             />
           </FadeInWhenVisible>
         </div>
@@ -48,7 +48,9 @@ const ProjectContent = () => {
 };
 
 export const getStaticProps = async () => {
+  supervisors.shift();
+
   return {
-    props: { themes },
+    props: { supervisors },
   };
 };

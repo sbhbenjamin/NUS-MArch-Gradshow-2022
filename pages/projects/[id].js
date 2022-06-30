@@ -15,10 +15,28 @@ import { projects as allProjectImages } from '../../data/images/projects';
 
 const Project = ({ project, projectImages: images }) => {
   const { title, abstract, student, supervisor, theme, comment } = project;
-  const [isEnlarged, setEnlarged] = useState(false);
+  const [isEnlarged, setEnlarged] = useState(null);
 
   return (
     <Layout>
+      <div>
+        {isEnlarged && (
+          <div
+            className={styles.imageWrapper}
+            onClick={() => setEnlarged(null)}
+          >
+            <div className={styles.imageOverlay}>
+              <Image
+                layout="fill"
+                loader={() => {
+                  return `https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`;
+                }}
+                src={`https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`}
+              />
+            </div>
+          </div>
+        )}
+      </div>
       <div className={`${styles.container}`}>
         <div className={`${styles.contentBox} disable-scrollbars`}>
           <div className={styles.innerContentBox}>
@@ -43,11 +61,9 @@ const Project = ({ project, projectImages: images }) => {
         <div className={`${styles.imageBox} disable-scrollbars`}>
           {images &&
             images.map((image) => (
-              <div key={image.url} onClick={() => setEnlarged(!isEnlarged)}>
+              <div key={image.url} onClick={() => setEnlarged(image.url)}>
                 <Image
-                  className={`${styles.individualImageBox} ${
-                    isEnlarged && styles.enlarged
-                  }`}
+                  className={styles.individualImageBox}
                   loader={() => {
                     return `https://d18eblg1a9ju11.cloudfront.net/projects/${image.url}`;
                   }}
