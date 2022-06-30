@@ -155,3 +155,14 @@ h5 {
     line-height: 3.5rem;
   }
 }
+
+/* smaller mobile devices */
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 6px;
+  }
+
+  p {
+    line-height: 4.5rem;
+  }
+}

@@ -10,7 +10,15 @@ import { FiMail } from 'react-icons/fi';
 
 import { avatars } from '../data/images/avatars';
 
-const Avatar = ({ name, email, web, linkedin, instagram, projectId }) => {
+const Avatar = ({
+  name,
+  email,
+  web,
+  linkedin,
+  instagram,
+  projectId,
+  isSmallSize,
+}) => {
   return (
     <div>
       <div className={styles.avatarWrapper}>
@@ -20,8 +28,8 @@ const Avatar = ({ name, email, web, linkedin, instagram, projectId }) => {
           }}
           alt={name}
           src={avatars[projectId]}
-          width={150}
-          height={150}
+          width={isSmallSize ? 80 : 150}
+          height={isSmallSize ? 80 : 150}
           className={styles.avatar}
         />
         <p>{name}</p>

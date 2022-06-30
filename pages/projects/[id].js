@@ -62,6 +62,7 @@ const Project = ({ project, projectImages: images }) => {
                 web={project.web}
                 instagram={project.instagram}
                 linkedin={project.linkedin}
+                isSmallSize={false}
               />
             </div>
           </div>
@@ -89,7 +90,15 @@ const Project = ({ project, projectImages: images }) => {
             ))}
         </div>
         <div className={`${styles.avatar} ${styles.hideOnTablet}`}>
-          <Avatar name={student} projectId={project.id} />
+          <Avatar
+            name={student}
+            projectId={project.id}
+            email={project.email}
+            web={project.web}
+            instagram={project.instagram}
+            linkedin={project.linkedin}
+            isSmallSize={true}
+          />
         </div>
       </div>
     </Layout>
