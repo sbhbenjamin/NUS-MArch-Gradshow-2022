@@ -28,6 +28,7 @@ const Project = ({ project, projectImages: images }) => {
             <div className={styles.imageOverlay}>
               <Image
                 layout="fill"
+                objectFit="contain"
                 loader={() => {
                   return `https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`;
                 }}
