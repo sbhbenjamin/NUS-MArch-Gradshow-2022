@@ -843,10 +843,7 @@ export const projects = [
       'Delving into the social issue of interreligious conflict in Singapore, Sarah Tan’s thesis focuses on the area of Bras Basah Bugis to create an “In-Between” that various religions can peacefully share. Grounded in thorough morphological research on the common characteristics of religious buildings across time and regions, her project manages to provide common spaces that bring together various congregations without neglecting their respective customs and associated spaces. The use of poché in this project is of particular importance, emphasizing the solemn and ponderous nature of sacred spaces while providing the raw material for their integration in urban space.',
     abstract: [
       'A Common Ground for Bonding, Bridging and Reaching between Faiths:',
-      'The architecture challenges the fine line between the sacred and secular. The architecture looks to be a beacon of design for interreligious spaces to bridge and connect different religious groups. The thesis explores the idea of the evolving practice of religion today, ',
-      'the need for sacred space and bringing awareness to the rituals of each religion. The architecture creates a space where regardless of faith, can relate to the architecture. The architecture is synonymous with the surroundings and follows the existing urban ',
-      'gird. The architecture is free from any symbol, but embodies a sense of spirituality through ',
-      'the use of light shadow and poche.',
+      'The architecture challenges the fine line between the sacred and secular. The architecture looks to be a beacon of design for interreligious spaces to bridge and connect different religious groups. The thesis explores the idea of the evolving practice of religion today, the need for sacred space and bringing awareness to the rituals of each religion. The architecture creates a space where regardless of faith, can relate to the architecture. The architecture is synonymous with the surroundings and follows the existing urban gird. The architecture is free from any symbol, but embodies a sense of spirituality through the use of light shadow and poche.',
     ],
     email: '',
     web: '',
