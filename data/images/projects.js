@@ -20,12 +20,12 @@ export const projects = {
     { url: '22003/(7).webp', folder: '22003' },
   ],
   22004: [
-    { url: '22004/01_Travel', folder: '22004' },
-    { url: '22004/02_Travel', folder: '22004' },
-    { url: '22004/03_Travel', folder: '22004' },
-    { url: '22004/04_Site', folder: '22004' },
-    { url: '22004/05_Sections.webp', folder: '22004' },
-    { url: '22004/06_Web', folder: '22004' },
+    { url: '22004/1.webp', folder: '22004' },
+    { url: '22004/2.webp', folder: '22004' },
+    { url: '22004/3.webp', folder: '22004' },
+    { url: '22004/4.webp', folder: '22004' },
+    { url: '22004/5.webp', folder: '22004' },
+    { url: '22004/6.webp', folder: '22004' },
   ],
   22005: [
     { url: '22005/(1).webp', folder: '22005' },
