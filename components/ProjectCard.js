@@ -12,7 +12,7 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
           <div
             className={styles.card}
             style={{
-              backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://d18eblg1a9ju11.cloudfront.net/thumbnails/${projectUrl})`,
+              backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://d18eblg1a9ju11.cloudfront.net/${projectUrl})`,
               backgroundSize: 'cover',
             }}
           >

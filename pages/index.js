@@ -7,10 +7,11 @@ import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Home.module.css';
 
 import { supervisors } from '../data/supervisors';
+import { supervisors as supervisorThumbnails } from '../data/images/supervisors';
 
 import FadeInWhenVisible from '../components/motion/FadeInWhenVisible';
 
-export default function Home({ supervisors }) {
+export default function Home({ supervisors, supervisorThumbnails }) {
   return (
     <div>
       <Head>
@@ -22,24 +23,38 @@ export default function Home({ supervisors }) {
       <main>
         <Layout>
           <Landing />
-          <ProjectContent supervisors={supervisors} />
+          <ProjectContent
+            supervisors={supervisors}
+            supervisorThumbnails={supervisorThumbnails}
+          />
         </Layout>
       </main>
     </div>
   );
 }
 
-const ProjectContent = ({ supervisors }) => {
+const ProjectContent = ({ supervisors, supervisorThumbnails }) => {
   return (
     <div className={styles.content}>
       {supervisors.map((theme) => (
         <div className={styles.project} key={theme.supervisor}>
+          {console.log(supervisorThumbnails[theme.sid])}
           <FadeInWhenVisible>
             <ProjectCard
+              projectUrl={`supervisors/${supervisorThumbnails[theme.sid]}`}
               project={theme.theme}
               name={theme.supervisor}
               href={`/themes/${theme.sid}`}
             />
+            {/* {supervisors.map((project) => (
+              <ProjectCard
+                projectUrl={thumbnails[project.id].url}
+                project={project.title}
+                name={project.student}
+                href={`/projects/${project.id}`}
+                key={project.id}
+              />
+            ))} */}
           </FadeInWhenVisible>
         </div>
       ))}
@@ -51,6 +66,6 @@ export const getStaticProps = async () => {
   supervisors.shift();
 
   return {
-    props: { supervisors },
+    props: { supervisors, supervisorThumbnails },
   };
 };

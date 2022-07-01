@@ -50,7 +50,7 @@ const Theme = ({ projects, theme, supervisor, themeThumbnails }) => {
           >
             {projects.map((project) => (
               <ProjectCard
-                projectUrl={thumbnails[project.id].url}
+                projectUrl={`thumbnails/${thumbnails[project.id].url}`}
                 project={project.title}
                 name={project.student}
                 href={`/projects/${project.id}`}
