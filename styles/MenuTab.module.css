@@ -52,6 +52,17 @@
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    /* transition: right 1s ease-in-out; */
+  }
+
   .content {
     padding: 14rem 3rem;
     display: flex;

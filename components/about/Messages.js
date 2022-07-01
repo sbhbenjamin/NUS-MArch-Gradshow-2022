@@ -35,10 +35,12 @@ const Message = ({ img, title, message, name }) => {
           height={600}
         />
         <div className={styles.professorText}>
-          <h5>{name}</h5>
+          <p>
+            <strong>{name}</strong>
+          </p>
           {title.map((line) => (
             <p className="noMargin" key={line}>
-              {line}
+              <em>{line}</em>
             </p>
           ))}
         </div>
