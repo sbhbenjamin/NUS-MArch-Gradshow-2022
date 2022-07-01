@@ -16,3 +16,10 @@
   width: 600px;
   text-align: justify;
 }
+
+/* tablets */
+@media screen and (max-width: 800px) {
+  .themeText {
+    width: 100%;
+  }
+}
