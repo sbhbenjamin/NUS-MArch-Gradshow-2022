@@ -70,11 +70,6 @@ export const supervisors = [
     theme: 'HOT AIR: ATMOSPHERE AND THE EQUATORIAL CITY',
   },
   {
-    sid: '14',
-    supervisor: 'Assoc. Prof. Florian Heinzelmann (Dr.)',
-    theme: 'ADAPTIVE TROPICAL BUILDINGS UNDER LARGE SPAN ROOFS',
-  },
-  {
     sid: '15',
     supervisor: 'Assoc. Prof. François Blanciak (Dr.)',
     theme: 'FORM',

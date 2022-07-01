@@ -22,10 +22,6 @@ export const themes = [
     theme: 'F.U.N.3 | INFLEXION POINT',
   },
   {
-    supervisor: 'Assoc. Prof. Florian Heinzelmann (Dr.)',
-    theme: 'ADAPTIVE TROPICAL BUILDINGS UNDER LARGE SPAN ROOFS',
-  },
-  {
     supervisor: 'Prof. Ho Puay Peng (Dr.)',
     theme: 'CITY - CULTURE - CONSERVATION',
   },
