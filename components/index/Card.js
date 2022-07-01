@@ -12,16 +12,17 @@ const Card = ({ id, title, student, supervisor, img }) => {
     <div className={styles.card}>
       <Link href={`/projects/${id}`}>
         <a>
-          <Image
-            loader={() => {
-              return `https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail.url}`;
-            }}
-            src={`https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail}`}
-            alt="sample image 1"
-            layout="responsive"
-            width={1000}
-            height={750}
-          />
+          <div className={styles.cardImage}>
+            <Image
+              loader={() => {
+                return `https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail.url}`;
+              }}
+              src={`https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail}`}
+              alt="sample image 1"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className={styles.cardContent}>
             <div className={styles.cardHeader}>
               <p>

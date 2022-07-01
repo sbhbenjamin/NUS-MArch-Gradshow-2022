@@ -2,6 +2,12 @@
   border: 1px solid black;
 }
 
+.cardImage {
+  height: 24vh;
+  width: 100%;
+  position: relative;
+}
+
 .cardHeader > p {
   margin: 0;
   line-height: 1.6rem;
@@ -27,6 +33,11 @@
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
+  .cardImage {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+  }
   .cardContent {
     padding: 4rem 2rem;
   }
