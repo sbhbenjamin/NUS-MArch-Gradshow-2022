@@ -514,11 +514,6 @@ export const projects = {
     { url: '22043/(4).webp', folder: '22043' },
     { url: '22043/(5).webp', folder: '22043' },
     { url: '22043/(6).webp', folder: '22043' },
-    { url: '22043/(7).webp', folder: '22043' },
-    { url: '22043/(8).webp', folder: '22043' },
-    { url: '22043/(9).webp', folder: '22043' },
-    { url: '22043/(10).webp', folder: '22043' },
-    { url: '22043/(11).webp', folder: '22043' },
   ],
   22044: [
     { url: '22044/(1).webp', folder: '22044' },
@@ -686,6 +681,13 @@ export const projects = {
     { url: '22059/(18).webp', folder: '22059' },
     { url: '22059/(19).webp', folder: '22059' },
     { url: '22059/(20).webp', folder: '22059' },
+  ],
+  22060: [
+    { url: '22060/1.webp', folder: '22060' },
+    { url: '22060/2.webp', folder: '22060' },
+    { url: '22060/3.webp', folder: '22060' },
+    { url: '22060/4.webp', folder: '22060' },
+    { url: '22060/5.webp', folder: '22060' },
   ],
   22061: [
     { url: '22061/(1).webp', folder: '22061' },

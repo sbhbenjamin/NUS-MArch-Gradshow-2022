@@ -251,7 +251,7 @@ export const projects = [
   },
   {
     id: '22013',
-    student: 'Ng Yun Hui',
+    student: 'Sharyl, Ng Yun Hui',
     title: 'In Search of Sparkles',
     supervisor: 'Assoc. Prof. Tsuto Sakamoto',
     sid: '27',
@@ -1216,6 +1216,26 @@ export const projects = [
     instagram: '',
     linkedin: '',
     qr: 'https://www.nusmarchgradshow.com/2022/projects/22059',
+  },
+  {
+    id: '22060',
+    student: 'Zhang Zongyue',
+    title: 'AR Game - Living Block',
+    supervisor: 'Assoc. Prof. Rudi Stouffs (Dr.)',
+    sid: '22',
+    theme: 'DATA / PROCESS / EXPLORATION',
+    cluster: 'Performative Design',
+    cid: '3',
+    comment:
+      'This project revisits the common areas in a public residential estate to support AR Role-Playing Games (RPGs). The hypothesis is that such games will not only gain lots of interest as technology improves, but also that it can bring the community together if it is supported and made visible within our urban, residential environment. Different sizes of common spaces are matched with different kinds of activity spaces in order to provide the variety and variability required by different RPG games and activities. The configuration of the estate, its buildings and units are innovatively redesigned to integrate types of spaces and routings within an exemplar estate.   ',
+    abstract: [
+      'This design uses AR games as an experimental object or a virtual program (because it has both virtual and 3-dimensional properties) to try to explore how will the architecture change with the introduction of virtual programs. The form exploration process is also demand for finding out much more possibilities. ',
+    ],
+    email: 'zzz.y.paloma@gmail.com',
+    web: '',
+    instagram: '',
+    linkedin: '',
+    qr: 'https://www.nusmarchgradshow.com/2022/projects/22060',
   },
   {
     id: '22061',
