@@ -8,6 +8,7 @@
 
 .bookContent {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
 }
 
@@ -18,10 +19,39 @@
 .description {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
   gap: 2rem;
 }
 
 .buttonContainer {
   display: flex;
   gap: 1rem;
+}
+
+/* laptops */
+@media screen and (max-width: 1000px) {
+  .bookContent {
+    flex-direction: column;
+    gap: 6rem;
+    width: calc(100vw - 6rem);
+    align-items: center;
+  }
+
+  .bookImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookText {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
 }

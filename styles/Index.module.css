@@ -1,5 +1,7 @@
 .searchbar {
   width: 60%;
+  max-width: 60rem;
+  height: 2.5rem;
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
   border: 1px solid grey;
@@ -7,6 +9,8 @@
 
 .option {
   width: 20%;
+  max-width: 20rem;
+  height: 2.5rem;
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
   border: 1px solid grey;
@@ -17,6 +21,7 @@
 }
 
 .container {
+  margin-top: 3rem;
   padding-bottom: 5rem;
 }
 

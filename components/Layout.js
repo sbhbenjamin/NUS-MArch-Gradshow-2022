@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
         {children}
       </motion.main>
       {/* <div className={styles.content}>{children}</div> */}
+      <Footer />
     </div>
   );
 };

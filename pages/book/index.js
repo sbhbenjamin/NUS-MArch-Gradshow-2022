@@ -11,10 +11,11 @@ const index = () => {
       <div className="wrapper">
         <div className={styles.bookContainer}>
           <div className={styles.bookContent}>
-            <div>
+            <div className={styles.bookImage}>
               <Image
                 loader={() => '/placeholder.png'}
                 src="/placeholder.png"
+                alt="NUS M.Arch II Book"
                 height={390}
                 width={310}
               />

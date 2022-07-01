@@ -2,12 +2,14 @@
   border: 1px solid black;
 }
 
-.cardHeader {
-  line-height: 0.4rem;
+.cardHeader > p {
+  margin: 0;
+  line-height: 1.6rem;
 }
 
 .cardContent {
-  padding: 1.4rem 1rem;
+  border-top: 1px solid black;
+  padding: 1.2rem 1rem;
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -21,4 +23,14 @@
 
 .cardBody > p {
   margin: 0;
+}
+
+/* mobile devices */
+@media screen and (max-width: 550px) {
+  .cardContent {
+    padding: 4rem 2rem;
+  }
+  .cardHeader > p {
+    margin-bottom: 3rem;
+  }
 }

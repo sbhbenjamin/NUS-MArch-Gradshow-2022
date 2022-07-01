@@ -6,14 +6,15 @@
   text-align: center;
   height: 60vh;
   background-image: url('/backgrounds/contour1.svg');
+  margin-top: 5rem;
 }
 
 .themeContent {
-  padding: 5rem 0;
+  padding: 5rem 5rem;
 }
 
 .themeText {
-  width: 600px;
+  max-width: 600px;
   text-align: justify;
 }
 

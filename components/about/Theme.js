@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Theme.module.css';
+import Footer from '../Footer';
 
 const Theme = () => {
   return (

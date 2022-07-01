@@ -11,17 +11,10 @@ import { supervisors } from '../../data/supervisors';
 import useHorizontalScroll from '../../utils/useHorizontalScroll';
 import BackButton from '../../components/buttons/backButton';
 
-import { useWindowSize } from '../../hooks/useWindowSize';
-
 import { thumbnails } from '../../data/images/thumbnails';
 
 const Theme = ({ projects, theme, supervisor, themeThumbnails }) => {
   const scrollRef = useHorizontalScroll();
-  // const size = useWindowSize();
-
-  // useState(() => {
-  //   console.log(size);
-  // }, [size]);
 
   return (
     <Layout>

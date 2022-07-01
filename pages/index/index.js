@@ -72,6 +72,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+        {/* <Footer /> */}
       </Layout>
     </div>
   );

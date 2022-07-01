@@ -24,10 +24,12 @@ const Card = ({ id, title, student, supervisor, img }) => {
           />
           <div className={styles.cardContent}>
             <div className={styles.cardHeader}>
-              <h5>{title}</h5>
-              <p>{student}</p>
+              <p>
+                <strong>{title}</strong>
+              </p>
             </div>
             <div className={styles.cardBody}>
+              <p>{student}</p>
               <p>{supervisor}</p>
             </div>
           </div>

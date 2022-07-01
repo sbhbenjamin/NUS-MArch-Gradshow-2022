@@ -38,7 +38,6 @@ const ProjectContent = ({ supervisors, supervisorThumbnails }) => {
     <div className={styles.content}>
       {supervisors.map((theme) => (
         <div className={styles.project} key={theme.supervisor}>
-          {console.log(supervisorThumbnails[theme.sid])}
           <FadeInWhenVisible>
             <ProjectCard
               projectUrl={`supervisors/${supervisorThumbnails[theme.sid]}`}

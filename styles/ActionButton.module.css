@@ -45,3 +45,23 @@
 .secondaryButton:active {
   background-color: #6f6f6f;
 }
+
+@media screen and (max-width: 550px) {
+  .primaryButton {
+    padding: 3rem 6rem;
+  }
+
+  .secondaryButton {
+    padding: 3rem 6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .primaryButton {
+    padding: 3rem 6rem;
+  }
+
+  .secondaryButton {
+    padding: 3rem 6rem;
+  }
+}
