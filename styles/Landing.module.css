@@ -1,14 +1,15 @@
 .container {
   height: 100vh;
-  padding: 0 5rem;
-  background-image: url('/backgrounds/contour1.svg');
+  padding: 10rem 5rem 2rem 5rem;
+  /* background-image: url('/backgrounds/contour1.svg'); */
 }
 
 .content {
   height: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -18,10 +19,20 @@
   gap: 1.5rem;
 }
 
+.highlight {
+  background-color: black;
+  padding: 0 1rem;
+  color: white;
+}
+
 .scroller {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroMarch {
+  bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -40,5 +51,57 @@
 @media screen and (max-width: 550px) {
   .navItem {
     display: none;
+  }
+}
+
+#spin {
+  font-size: 6.109rem;
+  font-weight: 800;
+}
+
+#spin:after {
+  content: '';
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    content: 'NUS';
+    /* color: blue; */
+  }
+  10% {
+    content: 'M/Arch';
+    /* color: purple; */
+  }
+  20% {
+    content: 'Gradshow';
+    /* color: red; */
+  }
+  30% {
+    content: '2022';
+    /* color: orange; */
+  }
+  40% {
+    content: 'Atmosphere + Agency';
+    /* color: yellow; */
+  }
+  50% {
+    content: 'Conservation + Heritage';
+    /* color: green; */
+  }
+  60% {
+    content: 'Performative Design';
+    /* color: turquoise; */
+  }
+  70% {
+    content: 'Speculative Environments';
+    /* color: blue; */
+  }
+  80% {
+    content: 'Urban Commons + Wellness';
+    /* color: blueviolet; */
+  }
+  90% {
+    content: 'ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC ETC';
   }
 }

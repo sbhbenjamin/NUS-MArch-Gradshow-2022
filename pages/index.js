@@ -20,7 +20,7 @@ export default function Home({ supervisors, supervisorThumbnails }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={styles.landing}>
         <Layout>
           <Landing />
           <ProjectContent

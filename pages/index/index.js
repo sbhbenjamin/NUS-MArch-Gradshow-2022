@@ -52,7 +52,7 @@ const Index = () => {
   }, [query, supervisor, cluster]);
 
   return (
-    <div>
+    <div className={styles.indexpage}>
       <Layout>
         <div className={`${styles.container} wrapper`}>
           <div className="content">
