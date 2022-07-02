@@ -15,7 +15,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
   overflow-y: overlay;
-  cursor: url('/crosshair-regular.png') 16 16, auto;
+  cursor: url('/2022/crosshair-regular.png') 16 16, auto;
 }
 
 .progress-icon {

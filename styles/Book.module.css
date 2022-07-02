@@ -9,7 +9,12 @@
 .bookContent {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
+}
+
+.bookImage {
+  display: flex;
+  align-items: center;
 }
 
 .bookText {
