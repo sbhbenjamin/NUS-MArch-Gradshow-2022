@@ -30,7 +30,6 @@ const Landing = () => {
         {/* <motion.div
           // drag
           // dragConstraints={dragConstraints}
-          animate={{ x: [0, 100, 0], text: ['ipsum', 'dolor', 'e'] }}
           initial={{
             y: '-17vh',
             x: '5vw',

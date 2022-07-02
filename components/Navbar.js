@@ -66,6 +66,7 @@ const Navbar = () => {
           <Hamburger
             className={styles.hamburgerIcon}
             rounded
+            color={isOpen ? 'black' : 'white'}
             toggled={isOpen}
             toggle={setOpen}
           />

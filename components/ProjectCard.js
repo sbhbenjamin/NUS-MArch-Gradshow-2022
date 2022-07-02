@@ -5,10 +5,14 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles/ProjectCard.module.css';
 
+const variant = {
+  hidden: { opacity: 0, y: 0 },
+  show: { opacity: 1, y: -5 },
+};
+
 const ProjectCard = ({ project, name, href, projectUrl }) => {
   return (
     <motion.div
-      initial={{}}
       whileHover={{
         scale: 1.1,
         transition: { duration: 0.2 },
@@ -24,8 +28,19 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
               backdropFilter: 'blur(5px)',
             }}
           >
-            <h2>{project}</h2>
-            <h4>{name}</h4>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, ease: 'easeInOut', duration: 0.5 }}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 25 },
+              }}
+            >
+              <h2>{project}</h2>
+              <h4>{name}</h4>
+            </motion.div>
           </motion.div>
         </a>
       </Link>
