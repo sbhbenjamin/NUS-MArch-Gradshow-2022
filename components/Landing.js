@@ -117,10 +117,13 @@ const Landing = () => {
         variants={hero}
         initial="hidden"
         animate="show"
-        className={styles.scroller}
+        className={styles.scrollContainer}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
-        <Scroller />
+        <p>Explore Studios</p>
+        <div className={styles.scroller}>
+          <Scroller />
+        </div>
       </motion.div>
     </div>
   );
