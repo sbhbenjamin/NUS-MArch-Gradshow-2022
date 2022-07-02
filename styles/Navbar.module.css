@@ -20,6 +20,18 @@
   gap: 4rem;
 }
 
+.navItem {
+  transition: color 0.2s ease-in-out;
+}
+
+.navItem:hover {
+  color: rgb(199, 199, 199);
+}
+
+/* .navItem:focus {
+  color: rgb(199, 199, 199);
+} */
+
 @media screen and (max-width: 1000px) {
   .logo {
     width: 60px;

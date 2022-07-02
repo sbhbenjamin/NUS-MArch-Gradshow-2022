@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from '../styles/ProjectCard.module.css';
+import { blur } from '@cloudinary/url-gen/actions/effect';
 
 const variant = {
   hidden: { opacity: 0, y: 0 },
@@ -25,7 +26,6 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
             style={{
               backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://d18eblg1a9ju11.cloudfront.net/${projectUrl})`,
               backgroundSize: 'cover',
-              backdropFilter: 'blur(5px)',
             }}
           >
             <motion.div
@@ -33,8 +33,13 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: 0.3, ease: 'easeInOut', duration: 0.5 }}
+              // whileHover={{ filter: 'blur(0px)' }}
               variants={{
-                visible: { opacity: 1, y: 0 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  // filter: 'blur(2px)'
+                },
                 hidden: { opacity: 0, y: 25 },
               }}
             >
