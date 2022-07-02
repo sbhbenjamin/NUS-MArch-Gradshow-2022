@@ -1,3 +1,7 @@
+.active {
+  color: var(--light-grey);
+}
+
 .wrapper {
   color: black;
 }
