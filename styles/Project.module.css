@@ -15,6 +15,7 @@
 
 .back {
   top: 10rem;
+  margin-bottom: 1rem;
 }
 
 .abstract {
@@ -120,7 +121,7 @@
 
 @media screen and (max-width: 1250px) {
   .back {
-    padding-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .textContainer {
@@ -128,6 +129,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .textBox {
+    padding: 2rem 5rem 2rem 5rem;
   }
 
   .container {
@@ -164,8 +169,8 @@
 
   .callout {
     padding: 3rem 0;
-    border-top: 1px solid var(--light-grey);
-    border-bottom: none;
+    border-top: 1px solid var(--lighter-grey);
+    border-bottom: 1px solid var(--lighter-grey);
   }
 }
 
@@ -177,8 +182,13 @@
     position: relative;
   }
 
+  .back {
+    top: 0;
+    padding: 0;
+  }
+
   .textBox {
-    padding: 4rem 5rem 2rem 5rem;
+    padding: 2rem 5rem 2rem 5rem;
   }
 
   .text {

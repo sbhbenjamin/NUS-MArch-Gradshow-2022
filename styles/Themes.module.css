@@ -5,17 +5,19 @@
 }
 
 .content {
-  margin: 4rem;
+  margin: 0rem;
 }
 
 .projectGallery {
   display: flex;
   column-gap: 5rem;
   overflow-x: scroll;
+  min-height: 60vh;
+  align-items: center;
 }
 
 .projectGallery > :first-child {
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 .projectGallery > :last-child {
@@ -29,6 +31,11 @@
     flex-direction: column;
     row-gap: 5rem;
     align-items: center;
+    margin: 3rem;
+  }
+
+  .header {
+    text-align: center;
   }
 
   .projectGallery > :first-child {
@@ -37,5 +44,10 @@
 
   .projectGallery > :last-child {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wrapper {
+    margin-top: 10rem;
   }
 }
