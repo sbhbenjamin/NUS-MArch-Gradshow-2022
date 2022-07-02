@@ -144,12 +144,7 @@ h5 {
   }
 }
 
-/* mobile devices */
-@media screen and (max-width: 550px) {
-  .wrapper {
-    padding: 14rem 5rem;
-  }
-
+/* mobile devices @media screen and (max-width: 550px) {
   html {
     font-size: 8px;
   }
@@ -157,10 +152,14 @@ h5 {
   p {
     line-height: 3.5rem;
   }
-}
+} */
 
 /* smaller mobile devices */
 @media screen and (max-width: 550px) {
+  .wrapper {
+    padding: 14rem 5rem;
+  }
+
   html {
     font-size: 6px;
   }
@@ -174,7 +173,7 @@ h5 {
   }
 
   p {
-    line-height: 3.5rem;
+    line-height: 4.2rem;
   }
 
   h3 {
