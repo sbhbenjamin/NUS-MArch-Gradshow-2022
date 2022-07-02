@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import styles from '../styles/Layout.module.css';
 import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 const variant = {
   hidden: { opacity: 0, x: 0, y: 0 },

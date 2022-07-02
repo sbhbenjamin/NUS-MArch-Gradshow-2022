@@ -6,7 +6,6 @@ import Avatar from '../../components/Avatar';
 import BackButton from '../../components/buttons/backButton';
 
 import styles from '../../styles/Project.module.css';
-
 import { motion } from 'framer-motion';
 
 // sample projects

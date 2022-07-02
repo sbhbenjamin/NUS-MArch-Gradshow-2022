@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/dist/client/image';
-import Link from 'next/link';
+
+import Footer from './Footer';
 
 import styles from '../styles/Avatar.module.css';
 
