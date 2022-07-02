@@ -19,4 +19,14 @@ module.exports = {
     return config;
   },
   basePath: '/2022',
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/2022',
+        permanent: true,
+        basePath: false,
+      },
+    ];
+  },
 };
