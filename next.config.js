@@ -8,7 +8,6 @@ module.exports = {
       'd18eblg1a9ju11.cloudfront.net',
     ],
     loader: 'custom',
-    // path: 'https://d18eblg1a9ju11.cloudfront.net/',
   },
   webpack(config) {
     config.module.rules.push({
@@ -18,15 +17,15 @@ module.exports = {
     });
     return config;
   },
-  // basePath: '/2022',
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: '/',
-  //       destination: '/2022',
-  //       permanent: true,
-  //       basePath: false,
-  //     },
-  //   ];
-  // },
+  basePath: '/2022',
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/2022',
+        permanent: true,
+        basePath: false,
+      },
+    ];
+  },
 };
