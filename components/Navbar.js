@@ -8,11 +8,14 @@ import { Spin as Hamburger } from 'hamburger-react';
 import Logo from '../public/logo.svg';
 import MenuTab from './MenuTab';
 
+import { motion } from 'framer-motion';
+
 const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
+      delay: 0.7,
       staggerChildren: 0.3,
     },
   },
@@ -23,20 +26,34 @@ const item = {
   show: { opacity: 1 },
 };
 
-const Navbar = ({ darkTheme = false }) => {
+const Navbar = ({ darkTheme = false, animate = false }) => {
   const [isOpen, setOpen] = useState(false);
   const router = useRouter();
 
   return (
     <>
       <div className={styles.navbar}>
-        <Link href="/">
-          <a>
-            <Logo className={styles.logo} width="80px" height="80px" />
-          </a>
-        </Link>
-        <div className={styles.rightNav}>
-          <div
+        <motion.div
+          initial={animate && 'hidden'}
+          animate="show"
+          variants={item}
+          transition={{ duration: 1 }}
+        >
+          <Link href="/">
+            <a>
+              <Logo className={styles.logo} width="80px" height="80px" />
+            </a>
+          </Link>
+        </motion.div>
+        <motion.div
+          variants={container}
+          initial={animate && 'hidden'}
+          animate="show"
+          className={styles.rightNav}
+        >
+          <motion.div
+            variants={item}
+            transition={{ duration: 1 }}
             className={`${styles.navItem} ${
               router.pathname === '/index' && styles.active
             }`}
@@ -46,8 +63,10 @@ const Navbar = ({ darkTheme = false }) => {
                 <h4>Works</h4>
               </a>
             </Link>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            variants={item}
+            transition={{ duration: 1 }}
             className={`${styles.navItem} ${
               router.pathname === '/about' && styles.active
             }`}
@@ -57,8 +76,10 @@ const Navbar = ({ darkTheme = false }) => {
                 <h4>About</h4>
               </a>
             </Link>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            variants={item}
+            transition={{ duration: 1 }}
             className={`${styles.navItem} ${
               router.pathname === '/book' && styles.active
             }`}
@@ -68,8 +89,8 @@ const Navbar = ({ darkTheme = false }) => {
                 <h4>Book</h4>
               </a>
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className={styles.hamburger}>
           {darkTheme ? (
             <Hamburger

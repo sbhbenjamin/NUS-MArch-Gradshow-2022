@@ -103,6 +103,7 @@
 #spin:after {
   content: '';
   animation: spin 4s infinite step-end;
+  /* animation-delay: 1s; */
 }
 
 @keyframes spin {
@@ -124,11 +125,11 @@
   }
   40% {
     content: 'Atmosphere + Agency';
-    color: yellow;
+    color: rgb(255, 217, 0);
   }
   50% {
     content: 'Conservation + Heritage';
-    color: rgb(255, 115, 0);
+    color: rgb(214, 0, 0);
   }
   60% {
     content: 'Performative Design';

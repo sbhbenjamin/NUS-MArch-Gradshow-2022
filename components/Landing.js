@@ -15,7 +15,7 @@ const hero = {
 const Landing = () => {
   return (
     <>
-      <Navbar darkTheme={true} />
+      <Navbar darkTheme={true} animate={true} />
       <div className={styles.container}>
         <div className={styles.content}>
           <span id={styles.spin} />
@@ -26,7 +26,7 @@ const Landing = () => {
           initial="hidden"
           animate="show"
           className={styles.scrollContainer}
-          transition={{ delay: 0.8, duration: 0.5 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <p className={styles.scrollerText}>Explore Studios</p>
           <div className={styles.scroller}>

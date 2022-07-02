@@ -13,12 +13,7 @@ const variant = {
 
 const ProjectCard = ({ project, name, href, projectUrl }) => {
   return (
-    <motion.div
-      whileHover={{
-        scale: 1.1,
-        transition: { duration: 0.2 },
-      }}
-    >
+    <>
       <Link href={href}>
         <a>
           <motion.div
@@ -27,6 +22,11 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
               backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://d18eblg1a9ju11.cloudfront.net/${projectUrl})`,
               backgroundSize: 'cover',
             }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+            exit={{ opacity: 0 }}
           >
             <motion.div
               initial="hidden"
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
           </motion.div>
         </a>
       </Link>
-    </motion.div>
+    </>
   );
 };
 
