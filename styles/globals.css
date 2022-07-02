@@ -17,6 +17,24 @@ body {
   overflow-y: overlay;
   cursor: url('/crosshair-regular.png') 16 16, auto;
 }
+
+.progress-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 600px) {
+  .progress-icon {
+    width: 70px;
+    height: 70px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
 p {
   line-height: 1.9rem;
 }

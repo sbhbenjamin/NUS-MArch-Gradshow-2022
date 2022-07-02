@@ -5,6 +5,9 @@
 
 .content {
   padding: 2rem 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .project {
@@ -12,4 +15,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
 }
