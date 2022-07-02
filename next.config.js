@@ -18,4 +18,5 @@ module.exports = {
     });
     return config;
   },
+  basePath: '/2022',
 };
