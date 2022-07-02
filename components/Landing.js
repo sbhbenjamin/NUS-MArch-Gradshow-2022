@@ -26,7 +26,7 @@ const Landing = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div id={styles.spin} />
+        <span id={styles.spin} />
         {/* <motion.div
           // drag
           // dragConstraints={dragConstraints}
