@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
 import styles from '../styles/Layout.module.css';
 import { motion } from 'framer-motion';
 
@@ -12,8 +11,8 @@ const variant = {
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <Navbar className={styles.navbar} />
+    <>
+      <Navbar />
       <motion.main
         initial="hidden"
         animate="enter"
@@ -24,8 +23,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </motion.main>
-      {/* <div className={styles.content}>{children}</div> */}
-    </div>
+    </>
   );
 };
 

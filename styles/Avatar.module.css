@@ -1,9 +1,15 @@
 .avatarWrapper {
+  border-top: 1px solid var(--lighter-grey);
+  background-image: url('/backgrounds/contour1.svg');
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+}
+
+.avatarWrapper > p {
+  margin: 0 0 0.7rem 0;
 }
 
 .avatar {
@@ -13,4 +19,11 @@
 .socials {
   display: flex;
   gap: 1rem;
+}
+
+/* mobile devices */
+@media screen and (max-width: 550px) {
+  .avatarWrapper {
+    padding: 4rem 0;
+  }
 }

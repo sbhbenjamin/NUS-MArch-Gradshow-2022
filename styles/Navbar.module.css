@@ -1,13 +1,18 @@
 .navbar {
   display: flex;
   flex: 1;
-  padding: 3rem 5rem;
+  padding: 2rem 5rem;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  height: 10rem;
+}
+
+.active {
+  color: var(--light-grey);
 }
 
 .hamburger {
@@ -28,10 +33,6 @@
   color: rgb(199, 199, 199);
 }
 
-/* .navItem:focus {
-  color: rgb(199, 199, 199);
-} */
-
 @media screen and (max-width: 1000px) {
   .logo {
     width: 60px;
@@ -39,7 +40,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1250px) {
   .hamburger {
     z-index: 10;
     display: block;
@@ -57,5 +58,11 @@
   .logo {
     width: 48px;
     height: 48px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 8rem 5rem;
   }
 }

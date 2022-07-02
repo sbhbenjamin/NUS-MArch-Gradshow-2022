@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Scroller from '../components/Scroller';
 import styles from '../styles/Landing.module.css';
 
+import Navbar from './Navbar';
+
 import { motion } from 'framer-motion';
 
 const hero = {
@@ -24,10 +26,12 @@ const hoverProps = {
 
 const Landing = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <span id={styles.spin} />
-        {/* <motion.div
+    <>
+      <Navbar darkTheme={true} />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <span id={styles.spin} />
+          {/* <motion.div
           // drag
           // dragConstraints={dragConstraints}
           initial={{
@@ -66,8 +70,8 @@ const Landing = () => {
           <h1>2022</h1>
         </motion.div> */}
 
-        {/* <Background /> */}
-        {/* <motion.div
+          {/* <Background /> */}
+          {/* <motion.div
           variants={container}
           initial="hidden"
           animate="show"
@@ -98,7 +102,7 @@ const Landing = () => {
           </motion.div>
         </motion.div> */}
 
-        {/* <motion.div
+          {/* <motion.div
           variants={hero}
           initial="hidden"
           animate="show"
@@ -110,22 +114,23 @@ const Landing = () => {
           </h1>
         </motion.div> */}
 
-        {/* <h1 className={styles.hero}>NUS M.Arch Gradshow 2022</h1> */}
-      </div>
-
-      <motion.div
-        variants={hero}
-        initial="hidden"
-        animate="show"
-        className={styles.scrollContainer}
-        transition={{ delay: 0.8, duration: 0.5 }}
-      >
-        <p>Explore Studios</p>
-        <div className={styles.scroller}>
-          <Scroller />
+          {/* <h1 className={styles.hero}>NUS M.Arch Gradshow 2022</h1> */}
         </div>
-      </motion.div>
-    </div>
+
+        <motion.div
+          variants={hero}
+          initial="hidden"
+          animate="show"
+          className={styles.scrollContainer}
+          transition={{ delay: 0.8, duration: 0.5 }}
+        >
+          <p>Explore Studios</p>
+          <div className={styles.scroller}>
+            <Scroller />
+          </div>
+        </motion.div>
+      </div>
+    </>
   );
 };
 

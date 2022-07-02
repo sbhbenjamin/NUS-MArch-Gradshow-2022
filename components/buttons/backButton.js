@@ -1,13 +1,14 @@
 import { useRouter } from 'next/router';
 import { BiArrowBack } from 'react-icons/bi';
+import styles from '../../styles/BackButton.module.css';
 
 const BackButton = () => {
   const router = useRouter();
 
   return (
-    <div>
+    <div className={styles.container}>
       <BiArrowBack
-        className="backButton"
+        className={styles.backIcon}
         size={50}
         onClick={() => router.back()}
       />

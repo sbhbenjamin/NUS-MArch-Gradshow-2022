@@ -52,29 +52,27 @@ const Index = () => {
   }, [query, supervisor, cluster]);
 
   return (
-    <div className={styles.indexpage}>
-      <Layout>
-        <div className={`${styles.container} wrapper`}>
-          <div className="content">
-            <h2>Index of Works</h2>
-            <div className={styles.controls}>
-              <Options
-                query={query}
-                setQuery={setQuery}
-                supervisor={supervisor}
-                setSupervisor={setSupervisor}
-                cluster={cluster}
-                setCluster={setCluster}
-              />
-            </div>
-            <div className={styles.gallery}>
-              <Gallery projects={viewableProjects} />
-            </div>
+    <Layout>
+      <div className="wrapper">
+        <div className="content">
+          <h2>Index of Works</h2>
+          <div className={styles.controls}>
+            <Options
+              query={query}
+              setQuery={setQuery}
+              supervisor={supervisor}
+              setSupervisor={setSupervisor}
+              cluster={cluster}
+              setCluster={setCluster}
+            />
+          </div>
+          <div className={styles.gallery}>
+            <Gallery projects={viewableProjects} />
           </div>
         </div>
-        {/* <Footer /> */}
-      </Layout>
-    </div>
+      </div>
+      {/* <Footer /> */}
+    </Layout>
   );
 };
 

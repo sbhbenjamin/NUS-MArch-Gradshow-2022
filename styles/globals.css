@@ -1,7 +1,9 @@
 :root {
   --black: black;
   --dark-grey: #818181;
+  --lighter-grey: #d0d0d0;
   --light-grey: #979797;
+  --darker-grey: rgb(72, 72, 72);
   --primary: #bf0000;
 }
 
@@ -70,11 +72,7 @@ h5 {
 }
 
 .wrapper {
-  padding: 8rem 5rem 0 5rem;
-}
-
-.backButton {
-  cursor: pointer;
+  padding: 10rem 5rem;
 }
 
 .content {
@@ -148,6 +146,10 @@ h5 {
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
+  .wrapper {
+    padding: 14rem 5rem;
+  }
+
   html {
     font-size: 8px;
   }
@@ -165,6 +167,10 @@ h5 {
 
   h1 {
     font-size: 7.209rem;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 
   p {

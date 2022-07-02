@@ -19,6 +19,7 @@ const Project = ({ project, projectImages: images }) => {
 
   return (
     <Layout>
+      {/* Enlarged image overlay */}
       <div>
         {isEnlarged && (
           <div
@@ -29,6 +30,7 @@ const Project = ({ project, projectImages: images }) => {
               <Image
                 layout="fill"
                 objectFit="contain"
+                alt="Enlarged image"
                 loader={() => {
                   return `https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`;
                 }}
@@ -38,11 +40,26 @@ const Project = ({ project, projectImages: images }) => {
           </div>
         )}
       </div>
+
       <div className={`${styles.container}`}>
         <div className={`${styles.contentBox} disable-scrollbars`}>
           <div className={styles.innerContentBox}>
+            {/* <div className={`${styles.imageFilter} ${styles.hideOnTablet}`} /> */}
+            <div className={`${styles.coverImage} ${styles.hideOnTablet}`}>
+              <Image
+                loader={() => {
+                  return `https://d18eblg1a9ju11.cloudfront.net/projects/${images[0].url}`;
+                }}
+                src={images[0].url}
+                alt="cover image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
             <div className={styles.textBox}>
-              <BackButton />
+              <div className={styles.back}>
+                <BackButton />
+              </div>
               <ProjectHeader
                 title={title}
                 student={student}
@@ -54,7 +71,8 @@ const Project = ({ project, projectImages: images }) => {
             </div>
 
             <SupervisorComments supervisor={supervisor} comment={comment} />
-            <div className={`${styles.avatar} ${styles.hideOnMobile}`}>
+
+            <div className={styles.hideOnMobile}>
               <Avatar
                 name={student}
                 projectId={project.id}
@@ -89,7 +107,7 @@ const Project = ({ project, projectImages: images }) => {
               </div>
             ))}
         </div>
-        <div className={`${styles.avatar} ${styles.hideOnTablet}`}>
+        <div className={styles.hideOnTablet}>
           <Avatar
             name={student}
             projectId={project.id}
@@ -136,7 +154,7 @@ const ProjectHeader = ({ title, student, supervisor, theme }) => {
 const ProjectAbstract = ({ abstracts }) => {
   return (
     <div className={styles.textContainer}>
-      <div className={styles.abstractContainer}>
+      <div>
         <p>
           <strong>Abstract</strong>
         </p>

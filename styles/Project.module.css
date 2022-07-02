@@ -5,12 +5,16 @@
 }
 
 .contentBox {
-  padding-top: 2rem;
+  padding-top: 10rem;
   width: 50%;
   overflow-y: scroll;
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.back {
+  top: 10rem;
 }
 
 .abstract {
@@ -22,7 +26,7 @@
 }
 
 .textBox {
-  padding: 8rem 5rem 2rem 5rem;
+  padding: 0rem 5rem 2rem 5rem;
 }
 
 .imageBox {
@@ -37,8 +41,31 @@
   border: 5px solid white;
 }
 
+.imageFilter {
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100vw;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.276) 100%
+  );
+  z-index: 1;
+}
+
+.coverImage {
+  height: 50vh;
+  padding: 0;
+  position: relative;
+  filter: brightness(80%);
+}
+
+.individualImageBox:first-of-type {
+  display: none;
+}
+
 .projectHeader {
-  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,10 +118,11 @@
   align-items: center;
 }
 
-.abstractContainer {
-}
-
 @media screen and (max-width: 1250px) {
+  .back {
+    padding-top: 2rem;
+  }
+
   .textContainer {
     display: flex;
     flex-direction: column;
@@ -108,6 +136,7 @@
   }
 
   .contentBox {
+    padding-top: 0rem;
     height: fit-content;
     width: 100%;
     overflow-y: visible;
@@ -123,10 +152,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-  }
-
-  .avatar {
-    order: 5;
   }
 
   .hideOnMobile {
@@ -146,8 +171,14 @@
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
+  .coverImage {
+    height: 30vh;
+    padding: 0;
+    position: relative;
+  }
+
   .textBox {
-    padding: 14rem 5rem 2rem 5rem;
+    padding: 4rem 5rem 2rem 5rem;
   }
 
   .text {
