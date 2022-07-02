@@ -1,6 +1,6 @@
 export const messages = [
   {
-    img: '/Erik.jpg',
+    img: '/2022/Erik.jpg',
     name: 'Dean’s Chair Associate Professor Erik L’Heureux FAIA',
     title: [
       'Programme Director, Master of Architecture',
@@ -17,7 +17,7 @@ export const messages = [
     ],
   },
   {
-    img: '/Aaron.jpg',
+    img: '/2022/Aaron.jpg',
     name: 'Professor Aaron Thean (Dr.)',
     title: [
       'Dean, College of Design & Environment',
@@ -31,7 +31,7 @@ export const messages = [
     ],
   },
   {
-    img: '/Ho.jpg',
+    img: '/2022/Ho.jpg',
     name: 'Professor Ho Puay Peng (Dr.)',
     title: [
       'Head of Department',

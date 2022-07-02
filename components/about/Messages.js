@@ -30,7 +30,7 @@ const Message = ({ img, title, message, name }) => {
         <Image
           loader={() => img}
           src={img}
-          alt="sample image 1"
+          alt={name}
           width={400}
           height={600}
         />
