@@ -5,7 +5,8 @@
   align-items: center;
   text-align: center;
   min-height: 60vh;
-  background-image: url('/backgrounds/contour1.svg');
+  background-image: url('/2022/backgrounds/contour1.svg');
+  border-bottom: 1px solid var(--lighter-grey);
 }
 
 .themeContent {
