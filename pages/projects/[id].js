@@ -53,6 +53,7 @@ const Project = ({ project, projectImages: images }) => {
                 alt="cover image"
                 layout="fill"
                 objectFit="cover"
+                priority
               />
             </div>
             <div className={styles.textBox}>
