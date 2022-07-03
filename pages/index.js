@@ -14,7 +14,6 @@ import FadeInWhenVisible from '../components/motion/FadeInWhenVisible';
 
 import {
   motion,
-  useViewportScroll,
   useSpring,
   useTransform,
   useElementScroll,
