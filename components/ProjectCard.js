@@ -31,6 +31,7 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              className={styles.cardContent}
               viewport={{ once: true }}
               transition={{ delay: 0.3, ease: 'easeInOut', duration: 0.5 }}
               // whileHover={{ filter: 'blur(0px)' }}
