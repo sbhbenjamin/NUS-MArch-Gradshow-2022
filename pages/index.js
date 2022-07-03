@@ -39,7 +39,7 @@ export default function Home({ supervisors, supervisorThumbnails }) {
       <Head>
         <title>NUS M.Arch Gradshow 2022</title>
         <meta name="description" content="NUS M.Arch Gradshow 2022" />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/2022/logo.svg" />
       </Head>
 
       <main className={styles.landing}>
