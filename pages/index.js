@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect, useRef } from 'react';
 
-import Layout from '../components/Layout';
 import Landing from '../components/Landing';
 import ProjectCard from '../components/ProjectCard';
 
@@ -37,7 +36,17 @@ export default function Home({ supervisors, supervisorThumbnails }) {
     <div>
       <Head>
         <title>NUS M.Arch Gradshow 2022</title>
-        <meta name="description" content="NUS M.Arch Gradshow 2022" />
+        <meta property="og:title" content="NUS M.Arch Gradshow 2022" />
+        <meta
+          name="keywords"
+          content="nus architecture, nus architecture gradshow, nus masters in architecture, nus architecture masters gradshow 2022, nus architecture graduation show, nus architecture exhibition"
+        />
+
+        <meta
+          property="og:description"
+          content="NUS Masters of Architecture Gradshow 2022: Architecture Etcetera"
+        />
+        <meta property="og:url" content="https://www.nusmarchgradshow.com" />
         <link rel="icon" href="/2022/logo.svg" />
       </Head>
 
