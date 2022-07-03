@@ -63,6 +63,7 @@
 
 @media screen and (max-width: 550px) {
   .navbar {
-    padding: 8rem 5rem;
+    height: 8rem;
+    padding: 0rem var(--mobile-padding);
   }
 }

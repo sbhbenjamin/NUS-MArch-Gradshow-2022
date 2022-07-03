@@ -7,7 +7,7 @@ import { messages } from '../../data/messages';
 const MessageContainer = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.header}>Messages</h2>
+      <h2 className="textHeader">Messages</h2>
       <div className={styles.messages}>
         {messages.map(({ img, name, title, message }) => (
           <Message
@@ -45,7 +45,7 @@ const Message = ({ img, title, message, name }) => {
           ))}
         </div>
       </div>
-      <div className={styles.messageText}>
+      <div className="textBox">
         {message.map((msg) => (
           <p key={msg}>{msg}</p>
         ))}

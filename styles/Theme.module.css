@@ -14,6 +14,9 @@
 }
 
 .themeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   max-width: 600px;
   text-align: justify;
 }
@@ -27,6 +30,7 @@
 
 @media screen and (max-width: 550px) {
   .themeContent {
-    padding: 12rem 5rem 5rem 5rem;
+    padding: var(--mobile-offset) var(--mobile-padding) 5rem
+      var(--mobile-padding);
   }
 }

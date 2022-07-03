@@ -21,11 +21,13 @@ const index = () => {
               />
             </div>
             <div className={styles.description}>
-              <div className={styles.bookText}>
+              <div className={styles.bookHeader}>
                 <h2>NUS M.Arch II Book</h2>
                 <p className="text-dark-grey">
                   <em>A compendium of works for the batch of 2022</em>
                 </p>
+              </div>
+              <div className={styles.bookText}>
                 <p>
                   The NUS M.Arch Grad Show Book 2022 celebrates the achievements
                   of our students&apos; year-long design leadership in their

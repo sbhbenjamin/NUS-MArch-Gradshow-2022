@@ -127,24 +127,26 @@ const ProjectHeader = ({ title, student, supervisor, theme }) => {
     <motion.div className={styles.projectHeader}>
       <div className={styles.text}>
         <h2>{title}</h2>
-        <p className="text-light-grey text-uppercase">
-          BY{' '}
-          <span>
-            <strong className="text-uppercase">{student}</strong>
-          </span>
-        </p>
-        <p className="text-light-grey text-uppercase">
-          SUPERVISED BY{' '}
-          <span>
-            <strong>{supervisor}</strong>
-          </span>
-        </p>
-        <p className="text-light-grey text-uppercase">
-          STUDIO THEME{' '}
-          <span>
-            <strong>{theme}</strong>
-          </span>
-        </p>
+        <div className={styles.meta}>
+          <p className="text-light-grey text-uppercase">
+            BY{' '}
+            <span>
+              <strong className="text-uppercase">{student}</strong>
+            </span>
+          </p>
+          <p className="text-light-grey text-uppercase">
+            SUPERVISED BY{' '}
+            <span>
+              <strong>{supervisor}</strong>
+            </span>
+          </p>
+          <p className="text-light-grey text-uppercase">
+            STUDIO THEME{' '}
+            <span>
+              <strong>{theme}</strong>
+            </span>
+          </p>
+        </div>
       </div>
     </motion.div>
   );

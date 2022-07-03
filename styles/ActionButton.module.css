@@ -7,6 +7,7 @@
   border-radius: 8px;
   color: #ffffff;
   font-weight: bold;
+  text-align: center;
 
   transition: all, 0.1s;
 }
@@ -28,6 +29,7 @@
   border-radius: 8px;
   color: #ffffff;
   font-weight: bold;
+  text-align: center;
 
   transition: all, 0.1s;
 }
@@ -40,22 +42,28 @@
   background-color: #6f6f6f;
 }
 
-@media screen and (max-width: 550px) {
-  .primaryButton {
-    padding: 3rem 6rem;
-  }
-
-  .secondaryButton {
-    padding: 3rem 6rem;
-  }
-}
-
 @media screen and (max-width: 420px) {
   .primaryButton {
-    padding: 3rem 6rem;
+    width: 100%;
+    padding: 1.25rem 0;
   }
 
   .secondaryButton {
-    padding: 3rem 6rem;
+    width: 100%;
+    padding: 1.25rem 0;
+    border: 2px solid var(--dark-grey);
+    background-color: white;
+    color: var(--dark-grey);
+  }
+
+  .secondaryButton:hover {
+    background-color: var(--dark-grey);
+    color: white;
+  }
+
+  .secondaryButton:active {
+    background-color: var(--darker-grey);
+    border-color: var(--darker-grey);
+    color: white;
   }
 }

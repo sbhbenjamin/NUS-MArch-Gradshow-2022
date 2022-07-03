@@ -23,12 +23,14 @@
   gap: 0.5rem;
 }
 
-.cardBody {
-  line-height: 0.4rem;
+.cardStudent {
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
-.cardBody > p {
+.cardSupervisor {
   margin: 0;
+  line-height: 1.25;
 }
 
 /* mobile devices */
@@ -37,19 +39,5 @@
     height: 30vh;
     width: 100%;
     position: relative;
-  }
-  .cardContent {
-    padding: 4rem 2rem;
-  }
-  .cardHeader > p {
-    margin-bottom: 3rem;
-  }
-}
-
-/* mobile devices */
-@media screen and (max-width: 400px) {
-  .cardHeader > p {
-    margin: 0;
-    line-height: 3.2rem;
   }
 }

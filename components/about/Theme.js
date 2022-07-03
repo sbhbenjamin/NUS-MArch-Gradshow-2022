@@ -6,8 +6,10 @@ const Theme = () => {
   return (
     <div className={styles.themeContainer}>
       <div className={styles.themeContent}>
-        <h2>Theme</h2>
-        <div className={styles.themeText}>
+        <div className="textHeader">
+          <h2>Theme</h2>
+        </div>
+        <div className="textBox">
           <p>
             To our Industry Partners, Staff, Alumni, and Students: For the first
             time since the pandemic began, the NUS M.Arch grad show is back

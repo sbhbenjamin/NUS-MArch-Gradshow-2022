@@ -30,8 +30,8 @@ const Card = ({ id, title, student, supervisor, img }) => {
               </p>
             </div>
             <div className={styles.cardBody}>
-              <p>{student}</p>
-              <p>{supervisor}</p>
+              <p className={styles.cardStudent}>{student}</p>
+              <p className={styles.cardSupervisor}>{supervisor}</p>
             </div>
           </div>
         </a>
