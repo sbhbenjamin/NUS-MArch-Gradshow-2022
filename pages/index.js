@@ -50,7 +50,7 @@ export default function Home({ supervisors, supervisorThumbnails }) {
         <meta name="robots" content="all" />
         <link
           rel="canonical"
-          href="ttps://www.nusmarchgradshow.com/2022"
+          href="ttps://www.nusmarchgradshow.com"
           key="canonical"
         />
         <link rel="icon" href="/2022/logo.svg" />
