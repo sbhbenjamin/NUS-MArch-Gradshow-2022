@@ -76,7 +76,7 @@ const index = () => {
                 />
                 <ActionButton
                   text="Pre-Order Book"
-                  link="https://www.google.com"
+                  link="https://forms.gle/ge6tJxcoZC7H5YxY7"
                   type="primary"
                 />
               </div>
