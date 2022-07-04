@@ -160,11 +160,11 @@ const ProjectAbstract = ({ abstracts }) => {
         <p>
           <strong>Abstract</strong>
         </p>
-        {abstracts.map((abstract) => (
-          <p key={abstract} className="text">
-            {abstract}
-          </p>
-        ))}
+        <div className="textBox">
+          {abstracts.map((abstract) => (
+            <p key={abstract}>{abstract}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -178,7 +178,7 @@ const SupervisorComments = ({ supervisor, comment }) => {
           <strong>Supervisor Comments</strong>
         </p>
         <div>
-          <p className="text">{comment}</p>
+          <p className="textBox">{comment}</p>
           <p className={styles.quoteName}>- {supervisor}</p>
         </div>
       </div>

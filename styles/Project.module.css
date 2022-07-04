@@ -115,6 +115,10 @@
   flex-direction: column;
 }
 
+.text {
+  max-width: 650px;
+}
+
 @media screen and (min-width: 1600px) {
   .projectHeader {
     display: flex;
