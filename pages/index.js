@@ -47,6 +47,7 @@ export default function Home({ supervisors, supervisorThumbnails }) {
           content="NUS Masters of Architecture Gradshow 2022: Architecture Etcetera – An exhibition showcasing the works by the Class of 2022 from NUS Masters of Architecture."
         />
         <meta property="og:url" content="https://www.nusmarchgradshow.com" />
+        <meta property="og:image" content="/2022/preview.jpg" />
         <meta name="robots" content="all" />
         <link
           rel="canonical"

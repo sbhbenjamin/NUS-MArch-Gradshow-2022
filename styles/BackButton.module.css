@@ -19,6 +19,7 @@
 /* mobile devices */
 @media screen and (max-width: 550px) {
   .backIcon {
-    width: 6rem;
+    width: 3rem;
+    margin-left: -5.82px;
   }
 }

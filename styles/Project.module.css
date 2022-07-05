@@ -199,10 +199,11 @@
   .back {
     top: 0;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .textBox {
-    padding: var(--mobile-padding);
+    padding: 1rem var(--mobile-padding);
   }
 
   .calloutContent {
