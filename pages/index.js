@@ -28,7 +28,6 @@ export default function Home({ supervisors, supervisorThumbnails }) {
   useEffect(() => {
     yRange.onChange((v) => {
       setIsComplete(v >= 1);
-      console.log(v);
     });
   }, [yRange]);
 
@@ -57,7 +56,7 @@ export default function Home({ supervisors, supervisorThumbnails }) {
           href="https://www.nusmarchgradshow.com/2022"
           key="canonical"
         />
-        <link rel="icon" href="/2022/logo.svg" />
+        <link rel="icon" href="/2022/icon-sm.jpg" />
       </Head>
 
       <main className={styles.landing}>
