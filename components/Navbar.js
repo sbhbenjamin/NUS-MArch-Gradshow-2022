@@ -26,13 +26,13 @@ const item = {
   show: { opacity: 1 },
 };
 
-const Navbar = ({ darkTheme = false, animate = false }) => {
+const Navbar = ({ darkTheme = false, animate = false, fixed = false }) => {
   const [isOpen, setOpen] = useState(false);
   const router = useRouter();
 
   return (
     <>
-      <div className={styles.navbar}>
+      <div className={`${styles.navbar} ${!fixed && styles.fixedNavbar}`}>
         <motion.div
           initial={animate && 'hidden'}
           animate="show"

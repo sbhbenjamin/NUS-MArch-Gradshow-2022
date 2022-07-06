@@ -15,7 +15,7 @@ const hero = {
 const Landing = () => {
   return (
     <>
-      <Navbar darkTheme={true} animate={true} />
+      <Navbar darkTheme={true} animate={true} fixed={true} />
       <div className={styles.container}>
         <div className={styles.content}>
           <span id={styles.spin} />
