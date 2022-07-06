@@ -10,9 +10,10 @@ import { motion } from 'framer-motion';
 
 // sample projects
 import { projects } from '../../data/projects';
+import { thumbnails } from '../../data/images/thumbnails';
 import { projects as allProjectImages } from '../../data/images/projects';
 
-const Project = ({ project, projectImages: images }) => {
+const Project = ({ project, projectImages: images, thumbnailImage }) => {
   const { title, abstract, student, supervisor, theme, comment } = project;
   const [isEnlarged, setEnlarged] = useState(null);
 
@@ -47,9 +48,9 @@ const Project = ({ project, projectImages: images }) => {
             <div className={`${styles.coverImage} ${styles.hideOnTablet}`}>
               <Image
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/projects/${images[0].url}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnailImage}`;
                 }}
-                src={images[0].url}
+                src={thumbnailImage}
                 alt="cover image"
                 layout="fill"
                 objectFit="cover"
@@ -191,10 +192,13 @@ export const getStaticProps = async ({ params }) => {
     (project) => project.id.toString() === params.id
   );
 
+  // get thumbnail
+  const thumbnailImage = thumbnails[project.id].url;
+
   // find images from project
   const projectImages = allProjectImages[`${params.id}`];
   return {
-    props: { project, projectImages }, // will be passed to the page component as props
+    props: { project, projectImages, thumbnailImage }, // will be passed to the page component as props
   };
 };
 
