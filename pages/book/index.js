@@ -16,8 +16,8 @@ const index = () => {
                 loader={() => '/2022/placeholder.png'}
                 src="/placeholder.png"
                 alt="NUS M.Arch II Book"
-                height={390}
-                width={310}
+                height={650}
+                width={500}
               />
             </div>
             <div className={styles.description}>
