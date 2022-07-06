@@ -112,7 +112,13 @@ h5 {
 }
 
 .wrapper {
-  padding: var(--mobile-offset) 5rem;
+  padding: 10rem 5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    padding: var(--mobile-offset) 5rem;
+  }
 }
 
 .content {
