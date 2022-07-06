@@ -3,21 +3,22 @@
   color: initial;
 
   padding: 1rem 2rem;
-  background-color: var(--primary);
-  border-radius: 8px;
+  background-color: black;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
-
+  border: 2px solid black;
   transition: all, 0.1s;
 }
 
 .primaryButton:hover {
-  background-color: #d80000;
+  background-color: var(--darker-grey);
+  border-color: var(--darker-grey);
 }
 
 .primaryButton:active {
-  background-color: #9a0000;
+  background-color: var(--darkest-grey);
+  border-color: var(--darkest-grey);
 }
 
 .secondaryButton {
@@ -25,9 +26,8 @@
   color: initial;
 
   padding: 1rem 2rem;
-  background-color: var(--dark-grey);
-  border-radius: 8px;
-  color: #ffffff;
+  color: black;
+  border: 2px solid black;
   font-weight: bold;
   text-align: center;
 
@@ -35,11 +35,14 @@
 }
 
 .secondaryButton:hover {
-  background-color: #989898;
+  background-color: var(--darker-grey);
+  border-color: var(--darker-grey);
+  color: white;
 }
 
 .secondaryButton:active {
-  background-color: #6f6f6f;
+  background-color: var(--darkest-grey);
+  border-color: var(--darkest-grey);
 }
 
 @media screen and (max-width: 420px) {

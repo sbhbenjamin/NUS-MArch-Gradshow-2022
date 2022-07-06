@@ -109,7 +109,9 @@ const ProjectContent = ({ supervisors, supervisorThumbnails }) => {
         <div className={styles.project} key={theme.supervisor}>
           <FadeInWhenVisible>
             <ProjectCard
-              projectUrl={`supervisors/${supervisorThumbnails[theme.sid]}`}
+              url={`https://d18eblg1a9ju11.cloudfront.net/supervisors/${
+                supervisorThumbnails[theme.sid]
+              }`}
               project={theme.theme}
               name={theme.supervisor}
               href={`/themes/${theme.sid}`}

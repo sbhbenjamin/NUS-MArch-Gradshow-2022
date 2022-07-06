@@ -50,7 +50,7 @@ const index = () => {
                   industry members who have RSVP-ed for the opening night of
                   Gradshow 2022 (one copy per company).
                 </p>
-                <p>
+                {/* <p>
                   Unfortunately, the book will only be available for local
                   (Singapore) purchase at this point of time. Please fill in the
                   form below if you wish to order, and make the payment through
@@ -59,7 +59,7 @@ const index = () => {
                   books are ready for collection, we will use your contact
                   details to notify you of the collection time, date and
                   location.
-                </p>
+                </p> */}
                 <p>
                   <strong>
                     As there are limited copies available, this order form will

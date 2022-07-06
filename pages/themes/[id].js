@@ -43,7 +43,9 @@ const Theme = ({ projects, theme, supervisor, themeThumbnails }) => {
           >
             {projects.map((project) => (
               <ProjectCard
-                projectUrl={`thumbnails/${thumbnails[project.id].url}`}
+                url={`https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${
+                  thumbnails[project.id].url
+                }`}
                 project={project.title}
                 name={project.student}
                 href={`/projects/${project.id}`}

@@ -48,7 +48,7 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
             <div className={`${styles.coverImage} ${styles.hideOnTablet}`}>
               <Image
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnailImage}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${thumbnailImage}`;
                 }}
                 src={thumbnailImage}
                 alt="cover image"

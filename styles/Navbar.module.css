@@ -12,7 +12,8 @@
 }
 
 .active {
-  color: var(--light-grey);
+  background-color: black;
+  color: white;
 }
 
 .hamburger {
@@ -27,10 +28,13 @@
 
 .navItem {
   transition: color 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
 }
 
 .navItem:hover {
-  color: rgb(199, 199, 199);
+  background-color: black;
+  color: white;
+  /* color: rgb(199, 199, 199); */
 }
 
 @media screen and (max-width: 1000px) {

@@ -5,13 +5,14 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles/ProjectCard.module.css';
 import { blur } from '@cloudinary/url-gen/actions/effect';
+import { thumbnails } from '../data/images/thumbnails';
 
 const variant = {
   hidden: { opacity: 0, y: 0 },
   show: { opacity: 1, y: -5 },
 };
 
-const ProjectCard = ({ project, name, href, projectUrl }) => {
+const ProjectCard = ({ project, name, href, url }) => {
   return (
     <>
       <Link href={href}>
@@ -19,7 +20,7 @@ const ProjectCard = ({ project, name, href, projectUrl }) => {
           <motion.div
             className={styles.card}
             style={{
-              backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://d18eblg1a9ju11.cloudfront.net/${projectUrl})`,
+              backgroundImage: `linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${url})`,
               backgroundSize: 'cover',
             }}
             whileHover={{

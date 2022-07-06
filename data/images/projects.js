@@ -75,7 +75,6 @@ export const projects = {
   22009: [
     { url: '22009/(1).webp', folder: '22009' },
     { url: '22009/(2).webp', folder: '22009' },
-    { url: '22009/AA_Siaoman_GIF', folder: '22009' },
   ],
   22010: [
     { url: '22010/(1).webp', folder: '22010' },

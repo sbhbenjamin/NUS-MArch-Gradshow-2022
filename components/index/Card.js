@@ -15,9 +15,9 @@ const Card = ({ id, title, student, supervisor, img }) => {
           <div className={styles.cardImage}>
             <Image
               loader={() => {
-                return `https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail.url}`;
+                return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${thumbnail.url}`;
               }}
-              src={`https://d18eblg1a9ju11.cloudfront.net/thumbnails/${thumbnail}`}
+              src={`https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${thumbnail}`}
               alt="sample image 1"
               layout="fill"
               objectFit="cover"
