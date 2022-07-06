@@ -100,11 +100,6 @@
   }
 }
 
-.test {
-  font-size: clamp(2rem, 4vw + 1rem, 8rem);
-  color: #5a8741;
-}
-
 #spin {
   font-size: clamp(2rem, 4vw + 1rem, 8rem);
   font-weight: 800;
