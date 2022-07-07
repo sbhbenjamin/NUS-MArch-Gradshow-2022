@@ -1,7 +1,6 @@
 .primaryButton {
   text-decoration: none;
   color: initial;
-
   padding: 1rem 2rem;
   background-color: black;
   color: #ffffff;
@@ -45,28 +44,11 @@
   border-color: var(--darkest-grey);
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
   .primaryButton {
-    width: 100%;
-    padding: 1.25rem 0;
+    font-size: 1rem;
   }
-
   .secondaryButton {
-    width: 100%;
-    padding: 1.25rem 0;
-    border: 2px solid var(--dark-grey);
-    background-color: white;
-    color: var(--dark-grey);
-  }
-
-  .secondaryButton:hover {
-    background-color: var(--dark-grey);
-    color: white;
-  }
-
-  .secondaryButton:active {
-    background-color: var(--darker-grey);
-    border-color: var(--darker-grey);
-    color: white;
+    font-size: 1rem;
   }
 }
