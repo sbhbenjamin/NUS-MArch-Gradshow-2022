@@ -29,10 +29,10 @@ body {
 }
 
 .link {
-  color: rgb(0, 34, 255);
-  /* background-color: black; */
-  /* color: white; */
-  /* padding: 0.2rem 0.4rem; */
+  /* color: rgb(0, 34, 255); */
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.4rem;
   transition: all, 0.1s;
 }
 

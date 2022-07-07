@@ -20,3 +20,10 @@
     padding: var(--mobile-offset) var(--mobile-padding);
   }
 }
+
+@media screen and (max-width: 550px) {
+  .location {
+    padding: var(--mobile-offset) var(--mobile-padding);
+    text-align: left;
+  }
+}
