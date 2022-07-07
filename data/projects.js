@@ -209,8 +209,8 @@ export const projects = [
   },
   {
     id: '22011',
-    student: 'Lim Si Yu, Ernest ',
-    title: 'The Mycelium Co-operative',
+    student: 'Lim Si Yu, Ernest',
+    title: 'Campus Sentosa',
     supervisor: 'Adj Asst. Prof. Wu Yen Yen',
     sid: '1',
     theme: 'ALTERNATE HISTORIES, PERIPHERAL ASSOCIATIONS',
