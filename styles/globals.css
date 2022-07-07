@@ -6,7 +6,7 @@
   --darker-grey: rgb(72, 72, 72);
   --darkest-grey: rgb(35, 35, 35);
   --primary: #bf0000;
-  --mobile-padding: 2.5rem;
+  --mobile-padding: clamp(2.5rem, 1vw + 1rem, 10rem);
   --navbar-height: 6rem;
   --mobile-offset: calc(10rem - var(--navbar-height) - 2rem);
 }
@@ -104,7 +104,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.8rem);
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.5rem);
 }
 
 h5 {

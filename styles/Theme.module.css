@@ -10,7 +10,7 @@
 }
 
 .themeContent {
-  padding: var(--mobile-offset) 5rem 5rem 5rem;
+  padding: 10rem 5rem 5rem 5rem;
 }
 
 .themeText {
@@ -22,9 +22,14 @@
 }
 
 /* tablets */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
   .themeText {
     width: 100%;
+  }
+
+  .themeContent {
+    padding: var(--mobile-offset) var(--mobile-padding) 5rem
+      var(--mobile-padding);
   }
 }
 
