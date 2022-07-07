@@ -1,7 +1,5 @@
 .wrapper {
-  margin-top: 8rem;
-  padding: 0 5rem;
-  padding-top: 2rem;
+  padding: 10rem 5rem 0 5rem;
 }
 
 .content {
@@ -22,6 +20,12 @@
 
 .projectGallery > :last-child {
   margin-right: 5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    padding: 1rem 5rem 0 5rem;
+  }
 }
 
 /* tablets */
@@ -48,6 +52,6 @@
 }
 @media screen and (max-width: 550px) {
   .wrapper {
-    margin-top: 10rem;
+    padding: 0 var(--mobile-offset);
   }
 }
