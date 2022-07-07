@@ -28,6 +28,23 @@ body {
   cursor: url('/2022/crosshair-regular.png') 16 16, auto;
 }
 
+.link {
+  color: rgb(0, 34, 255);
+  /* background-color: black; */
+  /* color: white; */
+  /* padding: 0.2rem 0.4rem; */
+  transition: all, 0.1s;
+}
+
+.link:hover {
+  background-color: var(--darker-grey);
+  border-color: var(--darker-grey);
+}
+.link:active {
+  background-color: var(--darkest-grey);
+  border-color: var(--darkest-grey);
+}
+
 .progress-icon {
   position: fixed;
   bottom: 20px;
