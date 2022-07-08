@@ -36,22 +36,22 @@ const Avatar = ({
         <p>{name}</p>
         <div className={styles.socials}>
           {web && (
-            <a href={web}>
+            <a href={web} target="_blank" rel="noreferrer">
               <FaGlobeAsia size={20} />
             </a>
           )}
           {linkedin && (
-            <a href={linkedin}>
+            <a href={linkedin} target="_blank" rel="noreferrer">
               <AiFillLinkedin size={20} />
             </a>
           )}
           {email && (
-            <a href={`mailto:${email}`}>
+            <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
               <FiMail size={20} />
             </a>
           )}
           {instagram && (
-            <a href={instagram}>
+            <a href={instagram} target="_blank" rel="noreferrer">
               <AiFillInstagram size={20} />
             </a>
           )}
