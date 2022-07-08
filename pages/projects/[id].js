@@ -103,7 +103,7 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
                   layout="responsive"
                   width="100%"
                   height="100%"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             ))}
