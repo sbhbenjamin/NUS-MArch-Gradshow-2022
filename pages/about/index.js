@@ -51,6 +51,8 @@ const Location = () => {
             <a
               className="link"
               href="https://www.instagram.com/nusm.archgradshow/?hl=en"
+              target="_blank"
+              rel="noreferrer"
             >
               @nusm.archgradshow
             </a>{' '}
