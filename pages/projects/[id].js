@@ -32,9 +32,9 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
                 objectFit="contain"
                 alt="Enlarged image"
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/projects-lg/${isEnlarged}`;
                 }}
-                src={`https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`}
+                src={`https://d18eblg1a9ju11.cloudfront.net/projects-lg/${isEnlarged}`}
               />
             </div>
           </div>
