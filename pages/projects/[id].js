@@ -96,14 +96,14 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
               >
                 <Image
                   loader={() => {
-                    return `https://d18eblg1a9ju11.cloudfront.net/projects-square/${image.url}`;
+                    return `https://d18eblg1a9ju11.cloudfront.net/projects-lg/${image.url}`;
                   }}
                   src={image.url}
                   alt="image"
                   layout="responsive"
                   width="100%"
                   height="100%"
-                  objectFit="fill"
+                  objectFit="cover"
                 />
               </div>
             ))}
