@@ -12,12 +12,13 @@ const index = () => {
         <div className={styles.bookContainer}>
           <div className={styles.bookContent}>
             <div className={styles.bookImage}>
+              he
               <Image
-                loader={() => '/2022/placeholder.png'}
-                src="/placeholder.png"
+                loader={() => '/2022/book1.jpeg'}
+                src="/2022/book1.jpeg"
                 alt="NUS M.Arch II Book"
-                height={650}
-                width={500}
+                layout="fill"
+                objectFit="contain"
               />
             </div>
             <div className={styles.description}>

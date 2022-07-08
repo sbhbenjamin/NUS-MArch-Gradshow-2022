@@ -13,6 +13,9 @@
 }
 
 .bookImage {
+  height: 40.625rem;
+  width: 31.25rem;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -64,5 +67,13 @@
 @media screen and (max-width: 420px) {
   .bookContent {
     gap: 2rem;
+  }
+
+  .bookImage {
+    height: 26rem;
+    width: 20rem;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 }
