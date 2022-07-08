@@ -55,10 +55,10 @@ const Navbar = ({ darkTheme = false, animate = false, fixed = false }) => {
             variants={item}
             transition={{ duration: 1 }}
             className={`${styles.navItem} ${
-              router.pathname === '/index' && styles.active
+              router.pathname === '/works' && styles.active
             }`}
           >
-            <Link href="/index">
+            <Link href="/works">
               <a>
                 <h4>Works</h4>
               </a>

@@ -10,9 +10,9 @@ const MenuTab = ({ closeTab }) => {
       <span onClick={closeTab} className={styles.overlayTab} />
       <div className={styles.overlay}>
         <div className={`${styles.content}`}>
-          <Link href="/index" passHref>
+          <Link href="/works" passHref>
             <a>
-              <h3 className={router.pathname === '/index' && styles.active}>
+              <h3 className={router.pathname === '/works' && styles.active}>
                 Works
               </h3>
             </a>
