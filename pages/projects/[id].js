@@ -32,9 +32,9 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
                 objectFit="contain"
                 alt="Enlarged image"
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/projects-sm/${isEnlarged}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`;
                 }}
-                src={`https://d18eblg1a9ju11.cloudfront.net/projects-sm/${isEnlarged}`}
+                src={`https://d18eblg1a9ju11.cloudfront.net/projects/${isEnlarged}`}
               />
             </div>
           </div>
@@ -48,7 +48,7 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
             <div className={`${styles.coverImage} ${styles.hideOnTablet}`}>
               <Image
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-md/${thumbnailImage}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${thumbnailImage}`;
                 }}
                 src={thumbnailImage}
                 alt="cover image"
@@ -96,7 +96,7 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
               >
                 <Image
                   loader={() => {
-                    return `https://d18eblg1a9ju11.cloudfront.net/projects-md/${image.url}`;
+                    return `https://d18eblg1a9ju11.cloudfront.net/projects-square/${image.url}`;
                   }}
                   src={image.url}
                   alt="image"
