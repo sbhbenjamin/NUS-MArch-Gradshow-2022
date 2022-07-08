@@ -12,7 +12,6 @@ const index = () => {
         <div className={styles.bookContainer}>
           <div className={styles.bookContent}>
             <div className={styles.bookImage}>
-              he
               <Image
                 loader={() => '/2022/book1.jpeg'}
                 src="/2022/book1.jpeg"
