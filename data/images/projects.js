@@ -552,6 +552,18 @@ export const projects = {
     { folder: '22045', url: '22045/8.webp' },
     { folder: '22045', url: '22045/9.webp' },
   ],
+  22049: [
+    { folder: '22049', url: '22049/1.webp' },
+    { folder: '22049', url: '22049/2.webp' },
+    { folder: '22049', url: '22049/3.webp' },
+    { folder: '22049', url: '22049/4.webp' },
+    { folder: '22049', url: '22049/5.webp' },
+    { folder: '22049', url: '22049/6.webp' },
+    { folder: '22049', url: '22049/7.webp' },
+    { folder: '22049', url: '22049/8.webp' },
+    { folder: '22049', url: '22049/9.webp' },
+    { folder: '22049', url: '22049/10.webp' },
+  ],
   22050: [
     { folder: '22050', url: '22050/1.webp' },
     { folder: '22050', url: '22050/2.webp' },
