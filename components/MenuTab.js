@@ -12,31 +12,31 @@ const MenuTab = ({ closeTab }) => {
         <div className={`${styles.content}`}>
           <div className={styles.navItems}>
             <Link href="/works" passHref>
-              <h4
+              <h3
                 className={`${styles.navItem} ${
                   router.pathname === '/works' && styles.active
                 }`}
               >
                 Works
-              </h4>
+              </h3>
             </Link>
             <Link href="/about" passHref>
-              <h4
+              <h3
                 className={`${styles.navItem} ${
                   router.pathname === '/about' && styles.active
                 }`}
               >
                 About
-              </h4>
+              </h3>
             </Link>
             <Link href="/book" passHref>
-              <h4
+              <h3
                 className={`${styles.navItem} ${
                   router.pathname === '/book' && styles.active
                 }`}
               >
                 Book
-              </h4>
+              </h3>
             </Link>
           </div>
         </div>
