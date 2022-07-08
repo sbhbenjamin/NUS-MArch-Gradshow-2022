@@ -48,7 +48,7 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
             <div className={`${styles.coverImage} ${styles.hideOnTablet}`}>
               <Image
                 loader={() => {
-                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-sm/${thumbnailImage}`;
+                  return `https://d18eblg1a9ju11.cloudfront.net/thumbnails-md/${thumbnailImage}`;
                 }}
                 src={thumbnailImage}
                 alt="cover image"
@@ -96,14 +96,14 @@ const Project = ({ project, projectImages: images, thumbnailImage }) => {
               >
                 <Image
                   loader={() => {
-                    return `https://d18eblg1a9ju11.cloudfront.net/projects-sm/${image.url}`;
+                    return `https://d18eblg1a9ju11.cloudfront.net/projects-md/${image.url}`;
                   }}
                   src={image.url}
                   alt="image"
                   layout="responsive"
                   width="100%"
                   height="100%"
-                  objectFit="contain"
+                  objectFit="fill"
                 />
               </div>
             ))}
