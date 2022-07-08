@@ -51,45 +51,39 @@ const Navbar = ({ darkTheme = false, animate = false, fixed = false }) => {
           animate="show"
           className={styles.rightNav}
         >
-          <motion.div
-            variants={item}
-            transition={{ duration: 1 }}
-            className={`${styles.navItem} ${
-              router.pathname === '/works' && styles.active
-            }`}
-          >
-            <Link href="/works">
-              <a>
-                <h4>Works</h4>
-              </a>
-            </Link>
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 1 }}
-            className={`${styles.navItem} ${
-              router.pathname === '/about' && styles.active
-            }`}
-          >
-            <Link href="/about">
-              <a>
-                <h4>About</h4>
-              </a>
-            </Link>
-          </motion.div>
-          <motion.div
-            variants={item}
-            transition={{ duration: 1 }}
-            className={`${styles.navItem} ${
-              router.pathname === '/book' && styles.active
-            }`}
-          >
-            <Link href="/book">
-              <a>
-                <h4>Book</h4>
-              </a>
-            </Link>
-          </motion.div>
+          <Link href="/works">
+            <motion.div
+              variants={item}
+              transition={{ duration: 1 }}
+              className={`${styles.navItem} ${
+                router.pathname === '/works' && styles.active
+              }`}
+            >
+              <h4>Works</h4>
+            </motion.div>
+          </Link>
+          <Link href="/about">
+            <motion.div
+              variants={item}
+              transition={{ duration: 1 }}
+              className={`${styles.navItem} ${
+                router.pathname === '/about' && styles.active
+              }`}
+            >
+              <h4>About</h4>
+            </motion.div>
+          </Link>
+          <Link href="/book">
+            <motion.div
+              variants={item}
+              transition={{ duration: 1 }}
+              className={`${styles.navItem} ${
+                router.pathname === '/book' && styles.active
+              }`}
+            >
+              <h4>Book</h4>
+            </motion.div>
+          </Link>
         </motion.div>
         <div className={styles.hamburger}>
           {darkTheme ? (

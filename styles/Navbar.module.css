@@ -34,7 +34,7 @@
 .navItem:hover {
   background-color: black;
   color: white;
-  /* color: rgb(199, 199, 199); */
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

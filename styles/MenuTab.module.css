@@ -1,5 +1,6 @@
 .active {
-  color: var(--light-grey);
+  background-color: black;
+  color: white;
 }
 
 .wrapper {
@@ -20,9 +21,32 @@
 .content {
   padding: 10rem 3rem;
   display: flex;
+  justify-content: end;
+}
+
+.navItems {
+  display: flex;
   flex-direction: column;
-  text-align: end;
+  align-items: flex-end;
   gap: 3rem;
+  width: fit-content;
+}
+
+.navItem {
+  width: fit-content;
+  transition: color 0.1s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.navItem:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.navItem:active {
+  background-color: var(--darker-grey);
+  color: white;
 }
 
 .overlayTab {
@@ -39,43 +63,19 @@
 
 @media screen and (max-width: 800px) {
   .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 45%;
-    height: 100%;
-    background-color: white;
-    z-index: 2;
-    /* transition: right 1s ease-in-out; */
   }
 
   .content {
     padding: 14rem 3rem;
     display: flex;
-    flex-direction: column;
-    text-align: end;
-    gap: 3rem;
+    justify-content: end;
   }
 }
 
 /* mobile devices */
 @media screen and (max-width: 550px) {
   .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 65%;
-    height: 100%;
-    background-color: white;
-    z-index: 2;
-    /* transition: right 1s ease-in-out; */
-  }
-
-  .content {
-    padding: 14rem 3rem;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    gap: 3rem;
   }
 }
