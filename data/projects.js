@@ -1637,9 +1637,9 @@ export const projects = [
       'The project hopes to facilitate the development of Muara Gembong in the years ahead, and empower locals to build and work collectively together, ultimately establishing an independent and self-sustaining functioning society. The end manifestation presented does not end there, but rather opens up possibilities of the village evolving and growing further.',
     ],
     email: 'jeslynseetoh@gmail.com',
-    web: 'issuu.com/jeslynseetoh',
+    web: 'https://jeslynseetoh.wixsite.com/portfolio',
     instagram: '',
-    linkedin: 'www.linkedin.com/in/jeslynseetoh',
+    linkedin: 'https://linkedin.com/in/jeslynseetoh',
     qr: 'https://www.nusmarchgradshow.com/2022/projects/22082',
   },
   {
