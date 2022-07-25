@@ -1726,6 +1726,26 @@ export const projects = [
     qr: 'https://www.nusmarchgradshow.com/2022/projects/22087',
   },
   {
+    id: '22088',
+    student: 'Zhang Yaning',
+    title: 'The Regenerative Social Condenser',
+    supervisor: 'Assoc. Prof. Fung John Chye',
+    sid: '16',
+    theme: 'F.U.N.3 | INFLEXION POINT',
+    cluster: 'Speculative Environments',
+    cid: '4',
+    comment:
+      'Prospecting that a segment of society would elect for alternative and resilient urban lifestyles, this thesis offers a future sea-borne community that integrates food production, collective living, and water-inspired activities in a sustainable manner. Adopting regeneration as its agenda, the design reflects a concern for supporting transient community-based programmes. The overall masterplan attempts to interweave the Southern Islands into a cohesive ensemble by respecting current ecological boundaries. The architecture employs a modular approach without the rigidity of a fixed grid. It demonstrates how a sea-borne community could be evolved by embedding flexibility and adaptability of growth.',
+    abstract: [
+      'Starting with a morphology study of cohousing, this thesis seeks to reimagine neighbourhood relationships to meet future lifestyles, enhance the sense of community, and promote mutual assistance between residents. Employing strategic foresight in scenario planning, we prospect how human values, needs and aspirations change over the coming decades, enabling multi-stage lifestyles rather than the traditional learn-work-retire process. The Southern Islands Community is hypothesized to raise community awareness by building a communal identity through practising a collective regenerative lifestyle. Founded on resource generation, it promotes the emotional attachment through production, food consumption and marine ecosystems cultivation. The co-living idea in a community that leverages a food production system fosters communal pride and nurtures deep bonds between everyone.',
+    ],
+    email: '407139608@qq.com',
+    web: 'https://issuu.com/home/published/zhang_yaning_portfolio_2016-2021_1_',
+    instagram: '',
+    linkedin: '',
+    qr: 'https://www.nusmarchgradshow.com/2022/projects/22088',
+  },
+  {
     id: '22090',
     student: 'Abirami Murugappan',
     title: 'Reaching Across The River',

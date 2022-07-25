@@ -940,6 +940,7 @@ export const projects = {
     { folder: '22087', url: '22087/(4).webp' },
     { folder: '22087', url: '22087/(5).webp' },
   ],
+  22088: [{ folder: '22089', url: '22088/1.jpg' }],
   22090: [
     { folder: '22090', url: '22090/(1).webp' },
     { folder: '22090', url: '22090/(2).webp' },
